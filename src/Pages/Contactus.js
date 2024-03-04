@@ -42,6 +42,7 @@ const ContactUs = () => {
         formState: { errors },
         trigger,
         setValue,
+        reset, 
     } = useForm({
         resolver: zodResolver(Schema),
     });
@@ -56,6 +57,8 @@ const ContactUs = () => {
                 },
                 body: JSON.stringify(values),
             });
+            reset()
+
         } catch (error) {
 
         }

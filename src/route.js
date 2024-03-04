@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import ContactUs from  './Pages/Contactus';
 import Product   from  './Pages/Product';
 import Resorce   from  './Pages/Resorce';
+import ProductDetail from './Pages/ProductDetail';
 const Routing = () => {
     return (
             <Routes>
@@ -12,6 +13,8 @@ const Routing = () => {
               <Route path="product" element={<Product />} />
               <Route path="contactUs" element={<ContactUs />} />
               <Route path="resource" element={<Resorce />} />
+              <Route path="product-detail" element={<ProductDetail />} />
+
             </Routes>
     )
 }
