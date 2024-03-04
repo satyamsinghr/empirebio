@@ -22,15 +22,15 @@ const Schema = z.object({
         .refine((value) => !/\s/.test(value), {
             message: "Last Name should not contain space",
         }),
-    phone: z.string()
+    phoneNo: z.string()
     // .min(1, { message: "Phone number is required" })
     //     .length(10, { message: "Phone number should be exactly 10 characters long" })
-        ,
+    ,
     email: z
         .string()
         .min(1, { message: "Email is required" })
         .email("Invalid Email address"),
-    organization: z.string().min(1, { message: "Organization  is required" }),
+    organisation: z.string().min(1, { message: "Organization  is required" }),
     message: z.string().min(1, { message: "Message  is required" }),
 
 })
@@ -49,7 +49,7 @@ const ContactUs = () => {
 
     const onSubmit = async (values) => {
         try {
-            const response = await fetch('http://localhost:8000/api/contacts', {
+            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/contacts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -156,17 +156,17 @@ const ContactUs = () => {
                                             class="form-label mb-1">Phone
                                             <span>*</span></label>
                                         <input type="number"
-                                            className={`form-control ${errors.phone ? "is-invalid" : ""
+                                            className={`form-control ${errors.phoneNo ? "is-invalid" : ""
                                                 }`}
-                                            id="phone"
+                                            id="phoneNo"
                                             placeholder
-                                            {...register("phone", {
-                                                onBlur: () => trigger("phone"),
-                                                onChange: () => trigger("phone"),
+                                            {...register("phoneNo", {
+                                                onBlur: () => trigger("phoneNo"),
+                                                onChange: () => trigger("phoneNo"),
                                             })} />
-                                        {errors.phone && (
+                                        {errors.phoneNo && (
                                             <div className="invalid-feedback">
-                                                {errors.phone.message}
+                                                {errors.phoneNo.message}
                                             </div>
                                         )}
                                     </div>
@@ -177,17 +177,17 @@ const ContactUs = () => {
                                             class="form-label mb-1">Organization
                                             <span>*</span></label>
                                         <input type="text"
-                                            className={`form-control ${errors.organization ? "is-invalid" : ""
+                                            className={`form-control ${errors.organisation ? "is-invalid" : ""
                                                 }`}
-                                            id="organization"
+                                            id="organisation"
                                             placeholder
-                                            {...register("organization", {
-                                                onBlur: () => trigger("organization"),
-                                                onChange: () => trigger("organization"),
+                                            {...register("organisation", {
+                                                onBlur: () => trigger("organisation"),
+                                                onChange: () => trigger("organisation"),
                                             })} />
-                                        {errors.organization && (
+                                        {errors.organisation && (
                                             <div className="invalid-feedback">
-                                                {errors.organization.message}
+                                                {errors.organisation.message}
                                             </div>
                                         )}
                                     </div>
