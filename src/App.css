@@ -22,7 +22,6 @@ li {
 header {
   position: absolute;
   padding: 24px 0;
-  padding: 24px 0;
   width: 100%;
   z-index: 9999;
   overflow: hidden;
@@ -35,17 +34,14 @@ header {
   box-shadow: none !important;
 }
 
-.dark_header button.navbar-toggler {
-  border-color: #fff;
-  background: #fff;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 a.navbar-brand img {
   width: 148px;
 }
-
+.ReactModal__Content.ReactModal__Content--after-open {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
 ul.navbar-nav .nav-item .nav-link,
 ul.navbar-nav .nav-item .nav-link.active,
 ul.navbar-nav .nav-item .nav-link:hover,
@@ -62,7 +58,7 @@ ul.navbar-nav .nav-item .nav-link:visited {
 section.siteBanner {
   padding: 64px 0 0;
   position: relative;
-  /* overflow: hidden; */
+  /* / overflow: hidden; / */
   display: flex;
   align-items: end;
 }
@@ -146,6 +142,7 @@ section.testing_bg:after {
 /*==== curial role =====*/
 section.testing_bg {
   position: relative;
+  /* / background-image: url(../images/testing_bg.jpeg); / */
   background-image: url(../public/images/testing_bg.jpeg);
   background-size: cover;
   background-position: center;
@@ -181,6 +178,7 @@ section.testing_bg {
 /*=== cleanliness ===*/
 .cleanliness_bg {
   background-image: url(../public/images/cleanliness-bg.png);
+  /* / background-image: url(../images/cleanliness-bg.png); / */
   min-height: 100vh;
   padding: 64px 0;
   background-size: cover;
@@ -216,7 +214,7 @@ section.testing_bg {
 section.feature_products {
   padding: 94px 0;
   position: relative;
-  /* overflow: hidden; */
+  /* / overflow: hidden; / */
   border-top-right-radius: 150px;
 }
 
@@ -397,26 +395,7 @@ section.siteBanner.inner_banner {
 
 .custom_modal .modal-dialog {
   border-radius: 40px;
-
-/*=== modal design ===*/
-
-.modal.show.fade {
-  display: flex !important;
-}
-
-.custom_modal .modal-dialog {
-  border-radius: 40px;
   background: #fff;
-  box-shadow: 0px 48px 64px 0px rgba(51, 51, 51, 0.50);
-  overflow: hidden;
-  width: 100%;
-  max-width: 782px;
-  padding: 40px;
-}
-
-.custom_modal .modal-body {
-  padding: 0 !important;
-  border: none !important;
   box-shadow: 0px 48px 64px 0px rgba(51, 51, 51, 0.50);
   overflow: hidden;
   width: 100%;
@@ -618,13 +597,10 @@ section.siteBanner.contact_banner {
 
   .banner_content.section_content p,
   .contact_banner .banner_content.section_content p {
-  .banner_content.section_content p,
-  .contact_banner .banner_content.section_content p {
       font-size: 16px;
       line-height: 29px;
   }
 
-  .btn.btn-outline-primary {
   .btn.btn-outline-primary {
       border-radius: 16px;
       font-size: 14px;
@@ -632,8 +608,6 @@ section.siteBanner.contact_banner {
       padding: 8px 10px 8px 14px;
   }
 
-  .btn.btn-primary,
-  .product_button .btn.btn-outline-primary {
   .btn.btn-primary,
   .product_button .btn.btn-outline-primary {
       font-size: 13px;
@@ -649,7 +623,6 @@ section.siteBanner.contact_banner {
       padding: 14px;
   }
 
-  .btn.btn-outline-primary.white_button {
   .btn.btn-outline-primary.white_button {
       font-size: 13px;
       padding: 10px 14px;
@@ -672,10 +645,6 @@ section.siteBanner.contact_banner {
   section.feature_products,
   .cleanliness_bg {
       padding: 40px 0;
-  }
-
-  .custom_modal .modal-dialog {
-      padding: 20px;
   }
 
   .custom_modal .modal-dialog {

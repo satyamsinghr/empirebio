@@ -14,27 +14,6 @@ const Product = () => {
         setModalIsOpen(false);
     };
 
-    const customStyles = {
-        overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: modalIsOpen ? 1000 : -1,
-        },
-        content: {
-            top: '0',
-            left: '0',
-            right: '0',
-            bottom: 'auto',
-            margin: 'auto',
-            width: '50%',
-            transform: 'translate(0%, 0%)',
-            backgroundColor: '#fff',
-            border: 'none',
-            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
-            marginTop: "120px",
-            borderRadius: "30px",
-            // height: "500px"
-        },
-    };
     return (
         <div>
             <section class="siteBanner inner_dark_banner inner_banner">
@@ -161,6 +140,7 @@ const Product = () => {
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
+                class="modal custom_modal"
             >
                 <RequestModel closeModal={closeModal} />
             </Modal>

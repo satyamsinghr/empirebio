@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-// import api from "../../services/axios-config";
-import { Link, useNavigate } from "react-router-dom";
 
 const Schema = z.object({
     firstName: z
@@ -24,15 +22,17 @@ const Schema = z.object({
         .refine((value) => !/\s/.test(value), {
             message: "Last Name should not contain space",
         }),
-    phone: z.string().min(1, { message: "Phone number is required" })
-        .length(10, { message: "Phone number should be exactly 10 characters long" }),
+    phone: z.string()
+    // .min(1, { message: "Phone number is required" })
+        // .length(10, { message: "Phone number should be exactly 10 characters long" })
+        ,
     email: z
         .string()
         .min(1, { message: "Email is required" })
         .email("Invalid Email address"),
     organization: z.string().min(1, { message: "Organization  is required" }),
     designation: z.string().min(1, { message: "Designation  is required" }),
-    message: z.string().min(1, { message: "Message  is required" }),
+    message: z.string(),
 
 })
 
@@ -47,8 +47,6 @@ const RequestModel = ({ closeModal }) => {
     } = useForm({
         resolver: zodResolver(Schema),
     });
-
-
 
     const onSubmit = async (values) => {
         try {
@@ -66,11 +64,8 @@ const RequestModel = ({ closeModal }) => {
     };
 
     return (
-        // <div
-        //     className="modal custom_modal fade align-items-start justify-content-center"
-        //     id="staticBackdrop" data-bs-backdrop="static"
-        //     data-bs-keyboard="false" tabindex="-1"
-        //     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div
+            className="modal custom_modal d-flex show fade align-items-start justify-content-center">
         <div className="modal-dialog">
             <div className="modal-content">
                 <div className="modal-body">
@@ -182,7 +177,7 @@ const RequestModel = ({ closeModal }) => {
                                         )}
                                     </div>
                                     <div
-                                        className="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-end mt-lg-0 mt-md-0 mt-3">
+                                        className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-end mt-lg-0 mt-md-0 mt-3">
                                         <input type="text"
                                             className={`form-control ${errors.lastName ? "is-invalid" : ""
                                                 }`}
@@ -225,7 +220,7 @@ const RequestModel = ({ closeModal }) => {
                                             for="exampleFormControlInput1"
                                             className="form-label mb-1">Phone
                                             <span>*</span></label>
-                                        <input type="tel"
+                                        <input type="number"
                                             className={`form-control ${errors.phone ? "is-invalid" : ""
                                                 }`}
                                             id="phone"
@@ -318,7 +313,7 @@ const RequestModel = ({ closeModal }) => {
                 </div>
             </div>
         </div>
-        // </div>
+         </div>
     )
 }
 
