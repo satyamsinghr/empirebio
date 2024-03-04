@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
-import { Link, useLocation } from 'react-router-dom';
-import ProductDetail from './ProductDetail';
+import { Link } from 'react-router-dom';
 
 
 const Product = () => {
@@ -78,7 +77,7 @@ const Product = () => {
                                     <h3 class="mb-3">Surface ATP Detection Swabs</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                       <Link to='/product-detail' class="btn btn-primary">Learn
+                                       <Link to='/surface-atp' class="btn btn-primary">Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request
@@ -94,7 +93,7 @@ const Product = () => {
                                     <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                        <Link to='/product-detail' class="btn btn-primary">Learn
+                                        <Link to='/aqua-atp' class="btn btn-primary">Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request
@@ -110,7 +109,7 @@ const Product = () => {
                                     <h3 class="mb-3">Surface Protein Detection Swabs</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                          <Link to='/product-detail' class="btn btn-primary">Learn
+                                          <Link to='/surface-protein' class="btn btn-primary">Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request
