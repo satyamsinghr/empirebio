@@ -5,8 +5,8 @@ const Header = () => {
     const location = useLocation();
     return (
         <div>
-            {/* <header class="dark_header"> */}
-            <header>
+            <header className={`${location.pathname === '/contactUs' ? 'white_header' : ''}`}>
+            {/* <header> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
@@ -43,7 +43,7 @@ const Header = () => {
                                                 style={{ color: location.pathname === '/product' ? 'white' : '' }} >Resource Center</a>
                                         </li>
                                         <li className="nav-item">
-                                            <Link to="/contactUs" className={`nav-link px-0 ${location.pathname === '/contactUs' ? 'active' : ''}`}
+                                            <Link to="/contactUs" className={`nav-link ${location.pathname === '/contactUs' ? 'active' : ''} px-0 `}
                                                 style={{ color: location.pathname === '/product' ? 'white' : '' }}>Contact Us</Link>
                                         </li>
                                     </ul>
