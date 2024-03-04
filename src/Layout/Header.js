@@ -31,19 +31,20 @@ const Header = () => {
                                     <ul
                                         className="navbar-nav ms-auto mb-2 gap-lg-5 gap-md-4 gap-3 mb-lg-0">
                                         <li className={`nav-item `}>
-                                            <Link to="/product" className={`nav-link px-0 ${location.pathname === '/product' ? 'active' : ''}`} >Products</Link>
+                                            <Link to="/product" className={`nav-link px-0 ${location.pathname === '/product' ? 'active' : ''}`}
+                                                style={{ color: location.pathname === '/product' ? 'white' : '' }}>Products</Link>
                                         </li>
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <a className="nav-link px-0"
                                                 href="#" >About Us</a>
-                                        </li>
+                                        </li> */}
                                         <li className="nav-item">
                                             <a className="nav-link px-0"
-                                                href="#" >Resource Center</a>
+                                                style={{ color: location.pathname === '/product' ? 'white' : '' }} >Resource Center</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link px-0"
-                                                href="#" >Contact Us</a>
+                                            <Link to="/contactUs" className={`nav-link px-0 ${location.pathname === '/contactUs' ? 'active' : ''}`}
+                                                style={{ color: location.pathname === '/product' ? 'white' : '' }}>Contact Us</Link>
                                         </li>
                                     </ul>
                                 </div>
