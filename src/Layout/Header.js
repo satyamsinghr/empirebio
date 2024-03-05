@@ -5,14 +5,14 @@ const Header = () => {
     const location = useLocation();
     return (
         <div>
-            <header className={`${location.pathname === '/contactUs' ? 'white_header' : ''}`}>
+           <header className={`${location.pathname === '/contactUs' ? 'white_header' : ''}`}>
             {/* <header> */}
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <nav className="navbar navbar-expand-lg p-0">
                                 <a className="navbar-brand">
-                                    {location.pathname === '/product' ? (
+                                    {location.pathname === '/product'|| location.pathname === '/' ? (
                                         <img src="images/logo_white.png" alt="Logo" />
                                     ) : (
                                         <img src="images/logo.png" alt="Logo" />
@@ -32,7 +32,9 @@ const Header = () => {
                                         className="navbar-nav ms-auto mb-2 gap-lg-5 gap-md-4 gap-3 mb-lg-0">
                                         <li className={`nav-item `}>
                                             <Link to="/product" className={`nav-link px-0 ${location.pathname === '/product' ? 'active' : ''}`}
-                                                style={{ color: location.pathname === '/product' ? 'white' : '' }}>Products</Link>
+                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
+                                                style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
+                                                >Products</Link>
                                         </li>
                                         {/* <li className="nav-item">
                                             <a className="nav-link px-0"
@@ -40,11 +42,15 @@ const Header = () => {
                                         </li> */}
                                         <li className="nav-item">
                                             <a className="nav-link px-0"
-                                                style={{ color: location.pathname === '/product' ? 'white' : '' }} >Resource Center</a>
+                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
+                                                style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
+                                                >Resource Center</a>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/contactUs" className={`nav-link ${location.pathname === '/contactUs' ? 'active' : ''} px-0 `}
-                                                style={{ color: location.pathname === '/product' ? 'white' : '' }}>Contact Us</Link>
+                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
+                                                style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
+                                                >Contact Us</Link>
                                         </li>
                                     </ul>
                                 </div>
