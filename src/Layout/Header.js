@@ -10,7 +10,6 @@ const Header = () => {
             location.pathname === '/aqua-atp' ||
             location.pathname ==='/surface-atp'||
             location.pathname ==='/surface-protein'||
-            location.pathname === '/contactUs' ||
             location.pathname.startsWith('/product-detail')
         );
     };
@@ -43,7 +42,6 @@ const Header = () => {
                                         className="navbar-nav ms-auto mb-2 gap-lg-5 gap-md-4 gap-3 mb-lg-0">
                                         <li className={`nav-item `}>
                                             <Link to="/product" className={`nav-link px-0 ${isProductRoute() ? 'active' : ''}`}
-                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
                                                 >Products</Link>
                                         </li>
@@ -53,13 +51,11 @@ const Header = () => {
                                         </li> */}
                                         <li className="nav-item">
                                             <a className="nav-link px-0"
-                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
                                                 >Resource Center</a>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/contactUs" className={`nav-link ${location.pathname === '/contactUs' ? 'active' : ''} px-0 `}
-                                                // style={{ color: location.pathname === '/product' ? 'white' : '' }}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
                                                 >Contact Us</Link>
                                         </li>

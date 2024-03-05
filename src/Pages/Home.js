@@ -157,7 +157,7 @@ const Home = () => {
                                 <div class="products_info">
                                     <h3 class="mb-3">CleanRead<sup>™</sup>
                                         Handheld</h3>
-                                    <Link to='/product-detail' className="btn btn-outline-primary white_button">Learn
+                                    <Link to='/product-detail' className="btn btn-outline-primary white_button" onClick={() => window.scrollTo(0, 0)}>Learn
                                         More</Link>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@ const Home = () => {
                                     alt />
                                 <div class="products_info">
                                     <h3 class="mb-3">ATP / Protein Test Swabs</h3>
-                                    <Link to='/surface-protein' className="btn btn-outline-primary white_button">Learn
+                                    <Link to='/surface-protein' className="btn btn-outline-primary white_button" onClick={() => window.scrollTo(0, 0)}>Learn
                                         More</Link>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ const Home = () => {
                                 <div class="products_info">
                                     <h3 class="mb-3">CleanRead<sup>™</sup> Reporting
                                         Tool</h3>
-                                    <Link to='/product-detail' className="btn btn-outline-primary white_button">Learn
+                                    <Link to='/product-detail' className="btn btn-outline-primary white_button" onClick={() => window.scrollTo(0, 0)}>Learn
                                         More</Link>
                                 </div>
                             </div>
