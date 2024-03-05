@@ -3,9 +3,20 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const location = useLocation();
+
+    const isProductRoute = () => {
+        return (
+            location.pathname === '/product' ||
+            location.pathname === '/aqua-atp' ||
+            location.pathname ==='/surface-atp'||
+            location.pathname ==='/surface-protein'||
+            location.pathname === '/contactUs' ||
+            location.pathname.startsWith('/product-detail')
+        );
+    };
     return (
         <div>
-           <header className={`${location.pathname === '/contactUs' ? 'white_header' : ''}`}>
+           <header className={`${location.pathname === '/contactUs' || location.pathname === '/aqua-atp'|| location.pathname === '/surface-atp'||  location.pathname ==='/surface-protein' || location.pathname ==='/product-detail'? 'white_header' : ''}`}>
             {/* <header> */}
                 <div className="container">
                     <div className="row">
@@ -31,7 +42,7 @@ const Header = () => {
                                     <ul
                                         className="navbar-nav ms-auto mb-2 gap-lg-5 gap-md-4 gap-3 mb-lg-0">
                                         <li className={`nav-item `}>
-                                            <Link to="/product" className={`nav-link px-0 ${location.pathname === '/product' ? 'active' : ''}`}
+                                            <Link to="/product" className={`nav-link px-0 ${isProductRoute() ? 'active' : ''}`}
                                                 // style={{ color: location.pathname === '/product' ? 'white' : '' }}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
                                                 >Products</Link>

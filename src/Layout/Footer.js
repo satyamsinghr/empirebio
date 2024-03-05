@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -14,19 +15,19 @@ const Footer = () => {
                             <h3>Quick Links</h3>
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                <Link to="/" >Home</Link>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">Products</a>
+                                    <Link to="/product">Products</Link>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">Resource Center</a>
+                                    <Link to="">Resource Center</Link>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">Contact Us</a>
+                                    <Link to="/contactUs">Contact Us</Link>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">Support</a>
+                                    <Link to="">Support</Link>
                                 </li>
                             </ul>
                         </div>
@@ -37,13 +38,13 @@ const Footer = () => {
                             <h3>Socials</h3>
                             <ul>
                                 <li>
-                                    <a href="#">LinkedIn</a>
+                                    <a >LinkedIn</a>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">X</a>
+                                    <a >X</a>
                                 </li>
                                 <li class="mt-3">
-                                    <a href="#">Facebook</a>
+                                    <a >Facebook</a>
                                 </li>
                             </ul>
                         </div>
@@ -54,7 +55,7 @@ const Footer = () => {
                             <h3>Privacy policy & Terms of use</h3>
                             <ul>
                                 <li>
-                                    <a href="#">Copyright 2024 | All Rights Reserved</a>
+                                    <a >Copyright 2024 | All Rights Reserved</a>
                                 </li>
                             </ul>
                         </div>

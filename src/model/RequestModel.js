@@ -160,7 +160,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Your
-                                                name <span>*</span></label>
+                                                name <span style={{color:"#FF0000"}}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.firstName ? "is-invalid" : ""
                                                     }`}
@@ -198,7 +198,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Email
-                                                address <span>*</span></label>
+                                                address <span style={{color:"#FF0000"}}>*</span></label>
                                             <input type="email"
                                                 className={`form-control ${errors.email ? "is-invalid" : ""
                                                     }`}
@@ -219,7 +219,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Phone
-                                                <span>*</span></label>
+                                                </label>
                                             <input type="number"
                                                 className={`form-control ${errors.phoneNo ? "is-invalid" : ""
                                                     }`}
@@ -240,7 +240,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Organization
-                                                <span>*</span></label>
+                                                <span style={{color:"#FF0000"}}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.organisation ? "is-invalid" : ""
                                                     }`}
@@ -261,7 +261,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Designation
-                                                <span>*</span></label>
+                                                <span style={{color:"#FF0000"}}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.destination ? "is-invalid" : ""
                                                     }`}
@@ -282,7 +282,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Message
-                                                <span>*</span></label>
+                                               </label>
 
                                             <textarea className={`form-control ${errors.message ? "is-invalid" : ""
                                                 }`}

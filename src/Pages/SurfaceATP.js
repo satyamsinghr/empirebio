@@ -1,6 +1,12 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
 const SurfaceATP = () => {
+    const navigate = useNavigate();
+
+    const handleNavigateBack = () => {
+        navigate(-1); 
+      };
   return (
     <div>
     <section class="siteBanner product_detail_banner">
@@ -12,7 +18,7 @@ const SurfaceATP = () => {
                           <li>
                               <svg xmlns="http://www.w3.org/2000/svg"
                                   width="24" height="24"
-                                  viewBox="0 0 24 24" fill="none">
+                                  viewBox="0 0 24 24" fill="none" onClick={handleNavigateBack}>
                                   <g clip-path="url(#clip0_40_176)">
                                       <path
                                           d="M12.8507 21.6094L11.8077 20.5664L9.31865 18.0774L6.29522 15.0539L3.696 12.4547C3.27412 12.0328 2.85928 11.6063 2.43037 11.1891L2.41162 11.1703V12.8274L3.45459 11.7844L5.94365 9.29533L8.96709 6.27189L11.5663 3.67267C11.9882 3.2508 12.4147 2.83361 12.8319 2.40705L12.8507 2.3883C13.064 2.17502 13.1929 1.86095 13.1929 1.55861C13.1929 1.27033 13.0663 0.92814 12.8507 0.728921C12.628 0.525015 12.3351 0.372671 12.021 0.386734C11.7093 0.400796 11.4163 0.506265 11.1913 0.728921L10.1483 1.77189L7.65928 4.26095L4.63584 7.28439L2.03662 9.88361C1.61475 10.3055 1.18818 10.7227 0.770996 11.1492L0.752246 11.168C0.30459 11.6156 0.30459 12.3774 0.752246 12.825C1.10146 13.1766 1.45068 13.5235 1.79756 13.8727L4.28662 16.3617L7.31006 19.3852L9.90928 21.9844C10.3312 22.4063 10.7483 22.8328 11.1749 23.25L11.1937 23.2688C11.4069 23.482 11.721 23.611 12.0233 23.611C12.3116 23.611 12.6538 23.4844 12.853 23.2688C13.0569 23.0461 13.2093 22.7531 13.1952 22.4391C13.1788 22.1274 13.0757 21.8344 12.8507 21.6094Z"
@@ -73,7 +79,7 @@ const SurfaceATP = () => {
                       </div>
 
                       <div
-                          class="product_card section_content detail_product_card mt-lg-5 mt-md-4 mt-4">
+                          class="section_content detail_product_card mt-lg-5 mt-md-4 mt-4">
                           <h3 class="mb-4">Features</h3>
                           <ul class="surface_list">
                               <li class="mb-2">All-in-one sampling device.</li>
@@ -98,21 +104,18 @@ const SurfaceATP = () => {
           <div class="row g-4">
               <div class="col-12">
                   <div
-                      class="product_card section_content detail_product_card">
-                      <h3 class="mb-2">Compatible products </h3>
+                      class="section_content detail_product_card">
+                      <h3 class="mb-2">More from CleanRead™  </h3>
                   </div>
               </div>
 
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                   <div class="product_card">
-                      <img src="images/product_2.png" alt />
+                      <img src="images/product_1.png" alt />
                       <div class="product_card_ingo">
                           <h3 class="mb-3">CleanRead™ Handheld</h3>
                           <div class="section_content">
-                              <p class="mb-0">Precision swabs for
-                                  comprehensive surface
-                                  testing, compatible with our monitoring
-                                  systems.</p>
+                              <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
                           </div>
                       </div>
                   </div>

@@ -98,7 +98,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Your
-                                            name <span>*</span></label>
+                                            name <span style={{color:"#FF0000"}}>*</span></label>
                                         <input type="text"
                                             className={`form-control ${errors.firstName ? "is-invalid" : ""
                                                 }`}
@@ -136,7 +136,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Email
-                                            address <span>*</span></label>
+                                            address <span style={{color:"#FF0000"}}>*</span></label>
                                         <input type="email"
                                             className={`form-control ${errors.email ? "is-invalid" : ""
                                                 }`}
@@ -157,7 +157,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Phone
-                                            <span>*</span></label>
+                                           </label>
                                         <input type="number"
                                             className={`form-control ${errors.phoneNo ? "is-invalid" : ""
                                                 }`}
@@ -178,7 +178,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Organization
-                                            <span>*</span></label>
+                                            <span style={{color:"#FF0000"}}>*</span></label>
                                         <input type="text"
                                             className={`form-control ${errors.organisation ? "is-invalid" : ""
                                                 }`}
@@ -199,7 +199,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Message
-                                            <span>*</span></label>
+                                            <span style={{color:"#FF0000"}}>*</span></label>
 
                                         <textarea className={`form-control ${errors.message ? "is-invalid" : ""
                                             }`}

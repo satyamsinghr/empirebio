@@ -397,6 +397,7 @@ section.siteBanner.inner_banner {
   border-radius: 40px;
   background: #fff;
   box-shadow: 0px 8px 16px 0px rgba(30, 30, 30, 0.20);
+  height: 100%;
 }
 
 .product_card_ingo {
