@@ -23,7 +23,7 @@ const Product = () => {
                             class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-xl-0">
                             <div>
                                 <div class="section_content banner_content h-auto">
-                                    <img src="images/clean_logo.png" style={{ width: "100%", maxWidth: "400px" }} alt />
+                                    <img src="images/clean_logo.png" style={{ width: "100%", maxWidth: "400px" }} alt="" />
                                     <h2 class="mb-3 text-white mt-lg-5">Accurate, Fast, Reliable - Cleanliness Verification Solutions</h2>
                                 </div>
                                 <div class="section_content">
@@ -36,7 +36,7 @@ const Product = () => {
                             <div class="banner_img w-100">
                                 <img src="images/product_img.png"
                                     class="img-fluid w-100"
-                                    alt />
+                                    alt="" />
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Product = () => {
                     <div class="row g-lg-4 g-md-3 g-3">
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="product_card">
-                                <img src="images/product_1.png" alt />
+                                <img src="images/product_1.png" alt="" />
                                 <div class="product_card_ingo">
                                     <h3 class="mb-3">CleanRead™ Handheld</h3>
                                     <div
@@ -66,7 +66,7 @@ const Product = () => {
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="product_card">
-                                <img src="images/product_2.png" alt />
+                                <img src="images/product_2.png" alt="" />
                                 <div class="product_card_ingo">
                                     <h3 class="mb-3">Surface ATP Detection Swabs</h3>
                                     <div
@@ -82,7 +82,7 @@ const Product = () => {
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="product_card">
-                                <img src="images/product_3.png" alt />
+                                <img src="images/product_3.png" alt="" />
                                 <div class="product_card_ingo">
                                     <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
                                     <div
@@ -98,7 +98,7 @@ const Product = () => {
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="product_card">
-                                <img src="images/product_4.png" alt />
+                                <img src="images/product_4.png" alt="" />
                                 <div class="product_card_ingo">
                                     <h3 class="mb-3">Surface Protein Detection Swabs</h3>
                                     <div
@@ -114,7 +114,7 @@ const Product = () => {
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="product_card">
-                                <img src="images/product_5.png" alt />
+                                <img src="images/product_5.png" alt="" />
                                 <div class="product_card_ingo">
                                     <h3 class="mb-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
                                     <div

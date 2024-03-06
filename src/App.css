@@ -221,7 +221,7 @@ section.testing_bg {
 /*=== cleanliness ===*/
 .cleanliness_bg {
     /* background-image: url(../images/cleanliness-bg.png); */
-    background-image: url(../public//images/cleanliness-bg.png);
+    background-image: url(../public/images/cleanliness-bg.png);
     min-height: 100vh;
     padding: 64px 0;
     background-size: cover;
@@ -574,6 +574,12 @@ section.product_detail_banner {
     color: #333;
 }
 
+ul.carousel_indicator.carousel-indicators {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
 .banner_carousel img {
     width: 100%;
     height: 506px;
@@ -582,11 +588,29 @@ section.product_detail_banner {
     overflow: hidden;
 }
 
-ul.carousel_indicator li img {
+.banner_carousel {
+    border-radius: 32px;
+    background: #d3d3d33d -150.285px -41px / 149.113% 112.648%;
+}
+
+ul.carousel_indicator li {
     border-radius: 24px;
-    border: 1px solid #AFB5BF;
-    width: 135px;
-    height: 112px;
+    border: 1px solid #AFB5BF !important;
+    width: 135px !important;
+    height: 112px !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box !important;
+    text-indent: 9px !important;
+    opacity: 1 !important;
+    flex: 0 0 auto !important;
+}
+
+ul.carousel_indicator li img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -653,6 +677,12 @@ ul.surface_list {
     .contact_banner .banner_content.section_content p {
         font-size: 19px;
     }
+
+    ul.carousel_indicator li {
+        border-radius: 18px;
+        width: 115px !important;
+        height: 92px !important;
+    }
 }
 
 @media (max-width:1280px) {
@@ -667,6 +697,12 @@ ul.surface_list {
         position: relative;
         justify-content: center;
         flex-direction: column;
+    }
+
+    ul.carousel_indicator li {
+        border-radius: 18px;
+        width: 95px !important;
+        height: 92px !important;
     }
 
     header {
@@ -793,6 +829,12 @@ ul.surface_list {
         padding: 8px 10px 8px 14px;
     }
 
+    ul.carousel_indicator li {
+        border-radius: 8px;
+        width: 75px !important;
+        height: 72px !important;
+    }
+
     .btn.btn-primary,
     .product_button .btn.btn-outline-primary {
         font-size: 13px;
@@ -853,5 +895,14 @@ ul.surface_list {
 @media (max-width:500px) {
     .siteBanner.inner_dark_banner {
         border-radius: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width:400px) {
+
+    ul.carousel_indicator li {
+        width: 55px !important;
+        height: 52px !important;
+        border-radius: 8px;
     }
 }

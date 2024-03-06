@@ -66,7 +66,7 @@ const AquaATP = () => {
                         <div
                             class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-start">
                             <div class="section_content h-auto">
-                                <img src="images/surface_icon.png" alt />
+                                <img src="images/surface_icon.png" alt="" />
                                 <h2 class="my-4">CleanRead™ Aqua ATP Detection Swabs</h2>
                                 <p class="mb-4"><b>Monitors ATP Levels in water as a quality
                                     cleanliness indicator with results in only 15 seconds!</b></p>
@@ -109,7 +109,7 @@ const AquaATP = () => {
                             class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center justify-content-center col-sm-12 col-12">
                             <div class="surface_img">
                                 {/* <img src="images/surface_img.png" width="100%" alt /> */}
-                                <img src="images/surface-detection.png" width="100%" alt />
+                                <img src="images/surface-detection.png" width="100%" alt="" />
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ const AquaATP = () => {
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
-                                    <img src="images/product_1.png" alt />
+                                    <img src="images/product_1.png" alt="" />
                                     <div class="product_card_ingo">
                                         <h3 class="mb-3">CleanRead™ Handheld</h3>
                                         <div class="section_content">
@@ -141,7 +141,7 @@ const AquaATP = () => {
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
-                                    <img src="images/product_2.png" alt />
+                                    <img src="images/product_2.png" alt="" />
                                     <div class="product_card_ingo">
                                         <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
                                         <div class="section_content">
@@ -157,7 +157,7 @@ const AquaATP = () => {
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
-                                    <img src="images/product_4.png" alt />
+                                    <img src="images/product_4.png" alt="" />
                                     <div class="product_card_ingo">
                                         <h3 class="mb-3">Surface Protein Detection
                                             Swabs</h3>

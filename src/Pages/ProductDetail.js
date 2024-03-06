@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
 import { Link, useNavigate } from 'react-router-dom';
-
 const ProductDetail = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -18,6 +17,7 @@ const ProductDetail = () => {
     const closeModal = () => {
         setModalIsOpen(false);
     };
+
     return (
         <div>
             <section class="siteBanner product_detail_banner " >
@@ -86,7 +86,7 @@ const ProductDetail = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/offline.png" alt />
+                                            <img src="images/offline.png" alt="" />
                                             <h3 class="mb-2 mt-3">Offline
                                                 Functionality</h3>
                                             <p class="mb-0">Automatically sync data
@@ -98,7 +98,7 @@ const ProductDetail = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/rfid.png" alt />
+                                            <img src="images/rfid.png" alt="" />
                                             <h3 class="mb-2 mt-3">RFID & Barcode
                                                 Capability</h3>
                                             <p class="mb-0">Scan RFID tags and
@@ -110,7 +110,7 @@ const ProductDetail = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/al-based.png" alt />
+                                            <img src="images/al-based.png" alt="" />
                                             <h3 class="mb-2 mt-3">AI based Test
                                                 Scheduling</h3>
                                             <p class="mb-0">Set up daily testing
@@ -120,26 +120,69 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="banner_carousel">
-                                <img src="images/carousel_1.png" alt />
+                      
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div id="carouselExampleIndicators"
+                            class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="banner_carousel">
+                                        <img src="images/carousel_1.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner_carousel">
+                                        <img src="images/indi_1.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner_carousel">
+                                        <img src="images/indi_2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner_carousel">
+                                        <img src="images/indi_3.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner_carousel">
+                                        <img src="images/indi_4.png" alt="" />
+                                    </div>
+                                </div>
                             </div>
+
                             <ul
-                                class="carousel_indicator overflow-auto gap-4 mt-4 d-flex align-items-center">
-                                <li>
-                                    <img src="images/indi_1.png" alt />
+                                class="carousel_indicator carousel-indicators overflow-auto gap-4 mt-4 d-flex justify-content-start align-items-center">
+                                <li type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1">
+                                    <img src="images/indi_1.png" alt="" />
                                 </li>
-                                <li>
-                                    <img src="images/indi_2.png" alt />
+                                <li type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2"
+                                    aria-label="Slide 2">
+                                    <img src="images/indi_2.png" alt="" />
                                 </li>
-                                <li>
-                                    <img src="images/indi_3.png" alt />
+                                <li type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="3"
+                                    aria-label="Slide 3">
+                                    <img src="images/indi_3.png" alt="" />
                                 </li>
-                                <li>
-                                    <img src="images/indi_4.png" alt />
+                                <li type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="4"
+                                    aria-label="Slide 4">
+                                    <img src="images/indi_4.png" alt="" />
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
                     </div>
                 </div>
             </section>
@@ -168,7 +211,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/plan.png" alt />
+                                    <img src="images/plan.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Today’s Plan</h3>
@@ -179,7 +222,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center my-lg-5 my-md-4 my-4 align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/quick_test.png" alt />
+                                    <img src="images/quick_test.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Quick Test</h3>
@@ -190,7 +233,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/report.png" alt />
+                                    <img src="images/report.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Report</h3>
@@ -201,7 +244,7 @@ const ProductDetail = () => {
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                             <div>
-                                <img src="images/detail_img.png" width="100%" alt />
+                                <img src="images/detail_img.png" width="100%" alt="" />
                             </div>
                         </div>
                         <div
@@ -209,7 +252,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/test_point.png" alt />
+                                    <img src="images/test_point.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Test Points</h3>
@@ -220,7 +263,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center my-lg-5 my-md-4 my-4 align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/syncro.png" alt />
+                                    <img src="images/syncro.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Synchronize</h3>
@@ -231,7 +274,7 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/scan.png" alt />
+                                    <img src="images/scan.png" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Scan Barcode</h3>
@@ -255,53 +298,53 @@ const ProductDetail = () => {
 
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
-                        <div class="product_card">
-                                <img src="images/product_2.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Surface ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface
-                                            testing, compatible with our monitoring
-                                            systems.</p>
+                                <div class="product_card">
+                                    <img src="images/product_2.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">Surface ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface
+                                                testing, compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </Link>
-                    </div>
+                        </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
-                        <div class="product_card">
-                                <img src="images/product_3.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_3.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </Link>
-                    </div>
+                        </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
-                        <div class="product_card">
-                                <img src="images/product_4.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Surface Protein Detection
-                                        Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_4.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">Surface Protein Detection
+                                            Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </Link>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </section>
