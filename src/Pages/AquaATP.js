@@ -1,11 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import Modal from 'react-modal';
+import RequestModel from '../model/RequestModel';
 
 const AquaATP = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleNavigateBack = () => {
         navigate(-1);
+    };
+
+    const openModal = (event) => {
+        event.preventDefault();
+        setModalIsOpen(true);
+    };
+    const closeModal = () => {
+        setModalIsOpen(false);
     };
 
     return (
@@ -75,7 +86,7 @@ const AquaATP = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4">Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={openModal}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4">Download
@@ -163,6 +174,13 @@ const AquaATP = () => {
                     </div>
                 </div>
             </section>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                class="modal custom_modal"
+            >
+                <RequestModel closeModal={closeModal} />
+            </Modal>
         </div>
     )
 }
