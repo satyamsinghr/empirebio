@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
 import { Link, useNavigate } from 'react-router-dom';
+import { saveAs } from 'file-saver';
 const ProductDetail = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -17,6 +18,11 @@ const ProductDetail = () => {
     const closeModal = () => {
         setModalIsOpen(false);
     };
+
+    const handleDownload = () => {
+        const pdfPath = 'pdf/Handheld_IFU_rev.pdf';
+        saveAs(pdfPath, 'Handheld_IFU_rev.pdf');
+      };
 
     return (
         <div>
@@ -78,7 +84,7 @@ const ProductDetail = () => {
                                         class="btn btn-primary outline-dark py-3 px-4" onClick={openModal}>Request
                                         a quote</button>
                                     <button
-                                        class="btn btn-outline-primary py-3 px-4">Download
+                                        class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
                                         brochure</button>
                                 </div>
 

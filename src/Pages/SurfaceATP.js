@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
+import { saveAs } from 'file-saver';
 
 const SurfaceATP = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -19,6 +20,11 @@ const SurfaceATP = () => {
     const closeModal = () => {
         setModalIsOpen(false);
     };
+
+    const handleDownload = () => {
+        const pdfPath = 'pdf/Surface_ATP_Detection_Swab_rev.pdf';
+        saveAs(pdfPath, 'Surface_ATP_Detection_Swab_rev.pdf');
+      };
     return (
         <div>
             <section class="siteBanner product_detail_banner">
@@ -86,7 +92,7 @@ const SurfaceATP = () => {
                                         class="btn btn-primary outline-dark py-3 px-4" onClick={openModal}>Request
                                         a quote</button>
                                     <button
-                                        class="btn btn-outline-primary py-3 px-4">Download
+                                        class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
                                         brochure</button>
                                 </div>
 
