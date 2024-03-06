@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from 'react-modal';
+import Modal               from 'react-modal';
 import RequestModel from '../model/RequestModel';
 import { Link } from 'react-router-dom';
 
@@ -21,24 +21,19 @@ const Product = () => {
                 <div class="container">
                     <div class="row g-4">
                         <div
-                            class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-xl-0">
+                            class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-xl-0">
                             <div>
                                 <div class="section_content banner_content h-auto">
                                     <img src="images/clean_logo.png" style={{ width: "100%", maxWidth: "400px" }} alt />
-                                    <h2 class="mb-3 text-white mt-lg-5">Beyond the
-                                        visible
-                                        spectrum of clean.</h2>
+                                    <h2 class="mb-3 text-white mt-lg-5">Accurate, Fast, Reliable - Cleanliness Verification Solutions</h2>
                                 </div>
                                 <div class="section_content">
-                                    <p class="mb-0 text-white">We help you ensure
-                                        every surface in your facility meets the
-                                        highest
-                                        standards of cleanliness.</p>
+                                    <p class="mb-0 text-white">CleanRead products are designed for comprehensive cleanliness verification across various environments. From healthcare facilities to food processing plants, ensure your surfaces meet the highest standards of cleanliness.</p>
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="col-xl-4 offset-xl-3 col-lg-12 col-md-12 col-sm-12 col-12 mt-xl-0 d-flex align-items-end">
+                            class="col-xl-4 offset-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 mt-xl-0 d-flex align-items-end">
                             <div class="banner_img w-100">
                                 <img src="images/product_img.png"
                                     class="img-fluid w-100"
@@ -77,7 +72,7 @@ const Product = () => {
                                     <h3 class="mb-3">Surface ATP Detection Swabs</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                       <Link to='/surface-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                        <Link to='/surface-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request
@@ -109,7 +104,7 @@ const Product = () => {
                                     <h3 class="mb-3">Surface Protein Detection Swabs</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                          <Link to='/surface-protein' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                        <Link to='/surface-protein' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request
@@ -125,7 +120,7 @@ const Product = () => {
                                     <h3 class="mb-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                         <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                        <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
                                         <a href="#" onClick={openModal}
                                             class="btn btn-outline-primary">Request

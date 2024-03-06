@@ -1,22 +1,14 @@
-import React from 'react'
-import { useForm } from "react-hook-form";
+import React           from 'react'
+import { useForm }     from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { z }           from "zod";
 
 const Schema = z.object({
-    firstName: z
-        .string()
-        .min(1, { message: "First Name is required" })
-        .refine((value) => !/\d/.test(value), {
-            message: "First Name should not contain numbers",
-        })
-        .refine((value) => !/\s/.test(value), {
-            message: "First Name should not contain space",
-        }),
+    firstName: z.string().min(1, { message: "First Name is required" }).refine((value) => !/\d/.test(value), {
+            message: "First Name should not contain numbers",}).refine((value) => !/\s/.test(value), {
+            message: "First Name should not contain space", }),
     lastName: z
-        .string()
-        .min(1, { message: "Last Name is required" })
-        .refine((value) => !/\d/.test(value), {
+        .string().min(1, { message: "Last Name is required" }).refine((value) => !/\d/.test(value), {
             message: "Last Name should not contain numbers",
         })
         .refine((value) => !/\s/.test(value), {
@@ -26,9 +18,7 @@ const Schema = z.object({
     // .min(1, { message: "Phone number is required" })
     //     .length(10, { message: "Phone number should be exactly 10 characters long" })
     ,
-    email: z
-        .string()
-        .min(1, { message: "Email is required" })
+    email: z.string().min(1, { message: "Email is required" })
         .email("Invalid Email address"),
     organisation: z.string().min(1, { message: "Organization  is required" }),
     message: z.string().min(1, { message: "Message  is required" }),
@@ -42,7 +32,7 @@ const ContactUs = () => {
         formState: { errors },
         trigger,
         setValue,
-        reset, 
+        reset,
     } = useForm({
         resolver: zodResolver(Schema),
     });
@@ -98,7 +88,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Your
-                                            name <span style={{color:"#FF0000"}}>*</span></label>
+                                            name <span style={{ color: "#FF0000" }}>*</span></label>
                                         <input type="text"
                                             className={`form-control ${errors.firstName ? "is-invalid" : ""
                                                 }`}
@@ -136,7 +126,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Email
-                                            address <span style={{color:"#FF0000"}}>*</span></label>
+                                            address <span style={{ color: "#FF0000" }}>*</span></label>
                                         <input type="email"
                                             className={`form-control ${errors.email ? "is-invalid" : ""
                                                 }`}
@@ -157,7 +147,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Phone
-                                           </label>
+                                        </label>
                                         <input type="number"
                                             className={`form-control ${errors.phoneNo ? "is-invalid" : ""
                                                 }`}
@@ -178,7 +168,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Organization
-                                            <span style={{color:"#FF0000"}}>*</span></label>
+                                            <span style={{ color: "#FF0000" }}>*</span></label>
                                         <input type="text"
                                             className={`form-control ${errors.organisation ? "is-invalid" : ""
                                                 }`}
@@ -199,7 +189,7 @@ const ContactUs = () => {
                                         <label
                                             for="exampleFormControlInput1"
                                             class="form-label mb-1">Message
-                                            <span style={{color:"#FF0000"}}>*</span></label>
+                                            <span style={{ color: "#FF0000" }}>*</span></label>
 
                                         <textarea className={`form-control ${errors.message ? "is-invalid" : ""
                                             }`}

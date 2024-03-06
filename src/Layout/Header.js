@@ -21,13 +21,13 @@ const Header = () => {
                     <div className="row">
                         <div className="col-12">
                             <nav className="navbar navbar-expand-lg p-0">
-                                <a className="navbar-brand">
+                                <Link to='/' className="navbar-brand">
                                     {location.pathname === '/product'|| location.pathname === '/' ? (
                                         <img src="images/logo_white.png" alt="Logo" />
                                     ) : (
                                         <img src="images/logo.png" alt="Logo" />
                                     )}
-                                </a>
+                                </Link>
                                 <button className="navbar-toggler" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent"

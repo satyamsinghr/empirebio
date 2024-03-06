@@ -8,17 +8,13 @@ const Home = () => {
                 <div class="container position-relative" style={{ zIndex: "9" }}>
                     <div class="row g-4">
                         <div
-                            class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-lg-0">
+                            class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-lg-0">
                             <div class="section_content banner_content">
-                                <h2 class="mb-lg-4 mb-md-3 mb-3 text-white">Beyond
-                                    the visible
-                                    spectrum of clean.</h2>
-                                <p class="mb-lg-5 mb-md-4 text-white mb-4">We help
-                                    you ensure
-                                    every surface in your facility meets the highest
-                                    standards of cleanliness.</p>
+                                <h2 class="mb-lg-4 mb-md-3 mb-3 text-white">Cleanliness is absolute,
+                                    there are no two ways about it. </h2>
+                                <p class="mb-lg-5 mb-md-4 text-white mb-4">We deliver Cleanliness Verification Solutions to ensure every surface meets the highest standards of clean.</p>
                                 <a href="#"
-                                    class="btn btn-outline-primary border-white text-white d-inlien-flex align-items-center gap-3"><span class="me-3">Here’s how we do it</span> <svg width="31" height="31"
+                                    class="btn btn-outline-primary border-white text-white d-inlien-flex align-items-center gap-3"><span class="me-3">Explore Our Products</span> <svg width="31" height="31"
                                         viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect x="1" y="30.913" width="29.8261"

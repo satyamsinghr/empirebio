@@ -5,8 +5,9 @@ const AquaATP = () => {
     const navigate = useNavigate();
 
     const handleNavigateBack = () => {
-        navigate(-1); 
-      };
+        navigate(-1);
+    };
+
     return (
         <div>
             <section class="siteBanner product_detail_banner">
@@ -56,7 +57,7 @@ const AquaATP = () => {
                             <div class="section_content h-auto">
                                 <img src="images/surface_icon.png" alt />
                                 <h2 class="my-4">CleanRead™ Aqua ATP Detection Swabs</h2>
-                                <p class="mb-4"><b>Monitors ATP Levels in water as a quality 
+                                <p class="mb-4"><b>Monitors ATP Levels in water as a quality
                                     cleanliness indicator with results in only 15 seconds!</b></p>
                                 <p>CleanRead™ Aqua ATP Detection Swabs are self-contained
                                     ATP tests for use with CleanRead™ Handheld luminometers.
@@ -114,44 +115,50 @@ const AquaATP = () => {
                         </div>
 
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_1.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">CleanRead™ Handheld</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                            <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_1.png" alt />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">CleanRead™ Handheld</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_2.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_2.png" alt />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_4.png" alt />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Surface Protein Detection
-                                        Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_4.png" alt />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-3">Surface Protein Detection
+                                            Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

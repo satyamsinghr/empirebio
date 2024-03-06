@@ -243,6 +243,7 @@ const ProductDetail = () => {
                     </div>
 
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
                         <div class="product_card">
                             <img src="images/product_2.png" alt />
                             <div class="product_card_ingo">
@@ -255,8 +256,10 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
                         <div class="product_card">
                             <img src="images/product_3.png" alt />
                             <div class="product_card_ingo">
@@ -269,8 +272,10 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
                         <div class="product_card">
                             <img src="images/product_4.png" alt />
                             <div class="product_card_ingo">
@@ -284,6 +289,7 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>
