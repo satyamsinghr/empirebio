@@ -29,6 +29,7 @@ const Footer = () => {
                                 <li class="mt-3">
                                     <Link to="">Support</Link>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
