@@ -64,13 +64,14 @@ ul.navbar-nav .nav-item .nav-link:visited {
 
 /*=== home v2 ===*/
 .home_bg {
-    /* background-image: url(../images/home_banner_bg.jpeg); */
-    background-image: url(../public/images/home_banner_bg.jpeg);
+    /* background-image: url(../images/home_banner_bg.png); */
+    background-image: url(../public/images/home_banner_bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
-
+/* 
 section.siteBanner.home_bg:after {
     position: absolute;
     content: "";
@@ -81,7 +82,7 @@ section.siteBanner.home_bg:after {
     right: 0;
     left: 0;
     bottom: 0;
-}
+} */
 
 /*=== site section ===*/
 section.siteBanner {
