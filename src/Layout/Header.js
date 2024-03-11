@@ -10,12 +10,13 @@ const Header = () => {
             location.pathname === '/aqua-atp' ||
             location.pathname ==='/surface-atp'||
             location.pathname ==='/surface-protein'||
+            location.pathname ==='/reporting-software'||
             location.pathname.startsWith('/product-detail')
         );
     };
     return (
         <div>
-           <header className={`${location.pathname === '/contactUs' || location.pathname === '/aqua-atp'|| location.pathname === '/surface-atp'||  location.pathname ==='/surface-protein' || location.pathname ==='/product-detail'? 'white_header' : ''}`}>
+           <header className={`${location.pathname === '/contactUs' || location.pathname === '/aqua-atp'|| location.pathname === '/surface-atp'|| location.pathname ==='/reporting-software'|| location.pathname ==='/surface-protein' || location.pathname ==='/product-detail'? 'white_header' : ''}`}>
             {/* <header> */}
                 <div className="container">
                     <div className="row">

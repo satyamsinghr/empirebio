@@ -6,17 +6,19 @@ import { saveAs } from 'file-saver';
 
 const SurfaceATP = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
+    const [selectedProductType, setSelectedProductType] = useState(null);
     const navigate = useNavigate();
 
     const handleNavigateBack = () => {
         navigate(-1);
     };
 
-    const openModal = (event) => {
+    const openModal = (event,productType) => {
         event.preventDefault();
+        setSelectedProductType(productType);
         setModalIsOpen(true);
     };
+
     const closeModal = () => {
         setModalIsOpen(false);
     };
@@ -89,7 +91,7 @@ const SurfaceATP = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4" onClick={openModal}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e,'surfaceAtp')}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
@@ -98,7 +100,7 @@ const SurfaceATP = () => {
 
                                 <div
                                     class="section_content detail_product_card mt-lg-5 mt-md-4 mt-4">
-                                    <h3 class="mb-4">Features</h3>
+                                    <h3 class="mb-4"><b>Features</b></h3>
                                     <ul class="surface_list">
                                         <li class="mb-2">All-in-one sampling device.</li>
                                         <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li>
@@ -123,7 +125,7 @@ const SurfaceATP = () => {
                         <div class="col-12">
                             <div
                                 class="section_content detail_product_card">
-                                <h3 class="mb-2">More from CleanRead™  </h3>
+                                <h3 class="mb-2"><b>More from CleanRead™ </b> </h3>
                             </div>
                         </div>
 
@@ -181,7 +183,7 @@ const SurfaceATP = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} />
+                <RequestModel closeModal={closeModal}  type={selectedProductType}/>
             </Modal>
         </div>
     )

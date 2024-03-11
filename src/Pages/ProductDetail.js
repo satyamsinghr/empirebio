@@ -5,14 +5,17 @@ import { Link, useNavigate } from 'react-router-dom';
 import { saveAs } from 'file-saver';
 const ProductDetail = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedProductType, setSelectedProductType] = useState(null);
 
     const navigate = useNavigate();
     const handleNavigateBack = () => {
         navigate(-1);
     };
 
-    const openModal = (event) => {
+    
+    const openModal = (event,productType) => {
         event.preventDefault();
+        setSelectedProductType(productType);
         setModalIsOpen(true);
     };
     const closeModal = () => {
@@ -81,7 +84,7 @@ const ProductDetail = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4" onClick={openModal}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4"    onClick={(e) => openModal(e,'handheld')}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
@@ -198,15 +201,15 @@ const ProductDetail = () => {
                         <div class="col-lg-6 col-md-8 col-sm-12 col-12">
                             <div
                                 class="section_content detail_product_card">
-                                <h3 class="mb-3">Product details</h3>
-                                <p class="mb-4">The CleanRead™ Handheld ATP Testing
-                                    Device is
-                                    designed for healthcare facilities demanding
-                                    quick, easy-to-use, and reliable solutions for
-                                    assessing cleaning protocols and verifying
-                                    efficacy within 15 seconds.</p>
-                                <button class="btn btn-outline-primary">Download
-                                    user manual</button>
+                                <h3 class="mb-3"><b> Product details</b></h3>
+                                <p class="mb-0">The CleanRead™ Handheld ATP Testing
+                                Device is
+                                designed for healthcare facilities demanding
+                                quick, easy-to-use, and reliable solutions for
+                                assessing cleaning protocols and verifying
+                                efficacy within 15 seconds.</p>
+                                {/* <button class="btn btn-outline-primary">Download
+                                    user manual</button> */}
                             </div>
                         </div>
                     </div>
@@ -298,7 +301,7 @@ const ProductDetail = () => {
                         <div class="col-12">
                             <div
                                 class="section_content detail_product_card">
-                                <h3 class="mb-2">Compatible products </h3>
+                                <h3 class="mb-2"><b>Compatible products</b></h3>
                             </div>
                         </div>
 
@@ -359,7 +362,7 @@ const ProductDetail = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} />
+                <RequestModel closeModal={closeModal} type={selectedProductType}/>
             </Modal>
         </div>
     )

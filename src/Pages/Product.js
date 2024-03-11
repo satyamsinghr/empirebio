@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Product = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
-    const openModal = (event) => {
+    const [selectedProductType, setSelectedProductType] = useState(null);
+    
+    const openModal = (event,productType) => {
         event.preventDefault();
+        setSelectedProductType(productType);
         setModalIsOpen(true);
     };
     const closeModal = () => {
@@ -57,7 +59,7 @@ const Product = () => {
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
                                         <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
-                                        <a href="#" onClick={openModal}
+                                        <a onClick={(e) => openModal(e,'handheld')}
                                             class="btn btn-outline-primary">Request
                                             a quote</a>
                                     </div>
@@ -73,7 +75,7 @@ const Product = () => {
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
                                         <Link to='/surface-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
-                                        <a href="#" onClick={openModal}
+                                        <a onClick={(e) => openModal(e,'surfaceAtp')}
                                             class="btn btn-outline-primary">Request
                                             a quote</a>
                                     </div>
@@ -89,7 +91,7 @@ const Product = () => {
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
                                         <Link to='/aqua-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
-                                        <a href="#" onClick={openModal}
+                                        <a onClick={(e) => openModal(e,'aquaAtp')}
                                             class="btn btn-outline-primary">Request
                                             a quote</a>
                                     </div>
@@ -105,7 +107,7 @@ const Product = () => {
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
                                         <Link to='/surface-protein' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
-                                        <a href="#" onClick={openModal}
+                                        <a onClick={(e) => openModal(e,'surfaceProtein')}
                                             class="btn btn-outline-primary">Request
                                             a quote</a>
                                     </div>
@@ -119,9 +121,10 @@ const Product = () => {
                                     <h3 class="mb-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
                                     <div
                                         class="product_button d-flex align-items-center gap-lg-4 gap-md-3 gap-3">
-                                        <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                        <Link to='/reporting-software' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
                                             More</Link>
-                                        <a href="#" onClick={openModal}
+                                        <a 
+                                        onClick={(e) => openModal(e,'reporting')}
                                             class="btn btn-outline-primary">Request
                                             a quote</a>
                                     </div>
@@ -137,7 +140,7 @@ const Product = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} />
+                <RequestModel closeModal={closeModal}  type={selectedProductType}/>
             </Modal>
 
         </div>

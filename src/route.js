@@ -9,6 +9,7 @@ import ProductDetail from './Pages/ProductDetail';
 import SurfaceATP from './Pages/SurfaceATP';
 import SurfaceProtein from './Pages/SurfaceProtein';
 import AquaATP from './Pages/AquaATP';
+import Reporting from './Pages/Reporting';
 const Routing = () => {
     return (
             <Routes>
@@ -20,6 +21,7 @@ const Routing = () => {
               <Route path="surface-atp" element={<SurfaceATP />} />
               <Route path="surface-protein" element={<SurfaceProtein />} />
               <Route path="aqua-atp" element={<AquaATP />} />
+              <Route path="reporting-software" element={<Reporting />} />
 
             </Routes>
     )

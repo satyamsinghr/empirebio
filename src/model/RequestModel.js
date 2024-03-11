@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -36,14 +36,13 @@ const Schema = z.object({
 
 })
 
-const RequestModel = ({ closeModal }) => {
-
+const RequestModel = ({ closeModal,type }) => {
     const {
         register,
         handleSubmit,
         formState: { errors },
         trigger,
-        setValue,
+        // setValue,
     } = useForm({
         resolver: zodResolver(Schema),
     });
@@ -73,7 +72,15 @@ const RequestModel = ({ closeModal }) => {
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
-                                    <h2>Get a quote</h2>
+                                    {/* <h2>Get a quote</h2>
+                                    <h2>Schedule a
+
+                                        demo.</h2> */}
+                                    {type === 'reporting' ? (
+                                        <h2>Schedule a demo.</h2>
+                                    ) : (
+                                        <h2>Get a quote</h2>
+                                    )}
                                     <div className="mt-lg-5 mt-md-4 mt-3">
                                         <div>
                                             <p
@@ -160,7 +167,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Your
-                                                name <span style={{color:"#FF0000"}}>*</span></label>
+                                                name <span style={{ color: "#FF0000" }}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.firstName ? "is-invalid" : ""
                                                     }`}
@@ -198,7 +205,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Email
-                                                address <span style={{color:"#FF0000"}}>*</span></label>
+                                                address <span style={{ color: "#FF0000" }}>*</span></label>
                                             <input type="email"
                                                 className={`form-control ${errors.email ? "is-invalid" : ""
                                                     }`}
@@ -219,7 +226,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Phone
-                                                </label>
+                                            </label>
                                             <input type="number"
                                                 className={`form-control ${errors.phoneNo ? "is-invalid" : ""
                                                     }`}
@@ -240,7 +247,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Organization
-                                                <span style={{color:"#FF0000"}}>*</span></label>
+                                                <span style={{ color: "#FF0000" }}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.organisation ? "is-invalid" : ""
                                                     }`}
@@ -261,7 +268,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Designation
-                                                <span style={{color:"#FF0000"}}>*</span></label>
+                                                <span style={{ color: "#FF0000" }}>*</span></label>
                                             <input type="text"
                                                 className={`form-control ${errors.destination ? "is-invalid" : ""
                                                     }`}
@@ -282,7 +289,7 @@ const RequestModel = ({ closeModal }) => {
                                             <label
                                                 for="exampleFormControlInput1"
                                                 className="form-label mb-1">Message
-                                               </label>
+                                            </label>
 
                                             <textarea className={`form-control ${errors.message ? "is-invalid" : ""
                                                 }`}

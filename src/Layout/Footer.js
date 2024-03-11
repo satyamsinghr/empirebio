@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 offset-lg-1">
                         <div
-                            class="d-flex flex-lg-column gap-lg-5 gap-md-4 gap-3 flex-md-column flex-column footer_nav">
+                            class="d-flex flex-lg-column gap-lg-3 gap-md-3 gap-3 flex-md-column flex-column footer_nav">
                             <h3>Privacy policy & Terms of use</h3>
                             <ul>
                                 <li>
