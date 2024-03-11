@@ -2,12 +2,14 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
-  return (
-      <footer>
+    return (
+        <footer>
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-1 col-md-12 col-sm-12 col-12">
-                        <img src="images/footer_logo.png" alt />
+                        <Link to='/' onClick={() => window.scrollTo(0, 0)}>
+                            <img src="images/footer_logo.png" alt />
+                        </Link>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 col-12 offset-lg-1">
                         <div
@@ -15,7 +17,7 @@ const Footer = () => {
                             <h3>Quick Links</h3>
                             <ul>
                                 <li>
-                                <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
+                                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
                                 </li>
                                 <li class="mt-3">
                                     <Link to="/product" onClick={() => window.scrollTo(0, 0)}>Products</Link>
@@ -29,7 +31,7 @@ const Footer = () => {
                                 <li class="mt-3">
                                     <Link to="">Support</Link>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -64,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-  )
+    )
 }
 
 export default Footer

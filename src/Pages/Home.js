@@ -91,30 +91,30 @@ const Home = () => {
             </section>
 
             <section class="cleanliness_bg d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12">
-                        <div class="section_content banner_content pe-lg-4">
-                            <div class="mb-lg-5 pb-lg-5 mb-md-4 mb-4">
-                                <img src="images/clean_button.png" alt='' />
-                            </div>
-                            <h2
-                                class="mb-lg-4 mb-md-3 mb-3 text-white">Cleanliness
-                                Confirmed.</h2>
-                            <p class="mb-lg-4 mb-md-4 mb-4 text-white">Because
-                                “trust me, it’s clean!” doesn’t quiet cut it,<br class="d-lg-block d-md-block d-none"/>in
-                                a hospital.</p>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="section_content banner_content pe-lg-4">
+                                <div class="mb-lg-5 pb-lg-5 mb-md-4 mb-4">
+                                    <img src="images/clean_button.png" alt='' />
+                                </div>
+                                <h2
+                                    class="mb-lg-4 mb-md-3 mb-3 text-white">Cleanliness
+                                    Confirmed.</h2>
+                                <p class="mb-lg-4 mb-md-4 mb-4 text-white">Because
+                                    “trust me, it’s clean!” doesn’t quiet cut it,<br class="d-lg-block d-md-block d-none" />in
+                                    a hospital.</p>
 
-                            <a href="#"
-                                class="btn btn-outline-primary white_button">Explore
-                                CleanRead</a>
+                                <a href="#"
+                                    class="btn btn-outline-primary white_button">Explore
+                                    CleanRead</a>
+                            </div>
                         </div>
+
                     </div>
-                   
                 </div>
-            </div>
-        </section>
+            </section>
 
             {/* <section class="feature_products">
                 <div class="container">
@@ -202,29 +202,29 @@ const Home = () => {
             </section> */}
 
             <section class="feature_products">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="col-lg-7 col-md-8 col-sm-12 col-12 d-flex align-items-center justify-content-lg-start justify-content-md-start justify-content-start">
-                        <div class="section_content">
-                            <h2 class="m-0">Featured products</h2>
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="col-lg-7 col-md-8 col-sm-12 col-12 d-flex align-items-center justify-content-lg-start justify-content-md-start justify-content-start">
+                            <div class="section_content">
+                                <h2 class="m-0">Featured products</h2>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-5 col-md-4 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-start">
+                            <a href="#" class="btn btn-plain">See all products</a>
                         </div>
                     </div>
                     <div
-                        class="col-lg-5 col-md-4 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-start">
-                        <a href="#" class="btn btn-plain">See all products</a>
-                    </div>
-                </div>
-                <div
-                    class="row mt-lg-5 mt-md-4 mt-4 pt-lg-2 pt-md-2 g-lg-4 g-md-3 g-3">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="products_card">
-                            <img src="images/feature_img.jpg" class="img-fluid"
-                                alt="" />
-                            <div class="products_info">
-                                <h3
-                                    class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>CleanRead<sup>™</sup>
-                                        Handheld</span>
+                        class="row mt-lg-5 mt-md-4 mt-4 pt-lg-2 pt-md-2 g-lg-4 g-md-3 g-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="products_card">
+                                <img src="images/feature_img.jpg" class="img-fluid"
+                                    alt="" />
+                                <div class="products_info">
+                                    <h3
+                                        class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>CleanRead<sup>™</sup>
+                                            Handheld</span>
                                         <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)} class="btn btn-plain"><svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="32" height="32"
@@ -233,19 +233,19 @@ const Home = () => {
                                                 d="M12.7571 10.3373C12.2071 10.2873 11.7207 10.6926 11.6707 11.2427C11.6207 11.7927 12.026 12.2791 12.5761 12.3291L12.7571 10.3373ZM20 11.9999L20.9959 11.9093C20.9522 11.4286 20.5713 11.0477 20.0905 11.004L20 11.9999ZM19.6708 19.4238C19.7208 19.9738 20.2072 20.3791 20.7572 20.3291C21.3072 20.2791 21.7125 19.7927 21.6625 19.2427L19.6708 19.4238ZM11.2928 19.2928C10.9023 19.6833 10.9023 20.3165 11.2928 20.707C11.6833 21.0976 12.3165 21.0976 12.707 20.707L11.2928 19.2928ZM12.5761 12.3291L19.9094 12.9958L20.0905 11.004L12.7571 10.3373L12.5761 12.3291ZM19.0041 12.0904L19.6708 19.4238L21.6625 19.2427L20.9959 11.9093L19.0041 12.0904ZM19.2929 11.2928L11.2928 19.2928L12.707 20.707L20.7071 12.707L19.2929 11.2928ZM27.7999 16C27.7999 22.5169 22.5169 27.7999 16 27.7999V29.7999C23.6215 29.7999 29.7999 23.6215 29.7999 16H27.7999ZM16 27.7999C9.48299 27.7999 4.19995 22.5169 4.19995 16H2.19995C2.19995 23.6215 8.37842 29.7999 16 29.7999V27.7999ZM4.19995 16C4.19995 9.48299 9.48299 4.19995 16 4.19995V2.19995C8.37842 2.19995 2.19995 8.37842 2.19995 16H4.19995ZM16 4.19995C22.5169 4.19995 27.7999 9.48299 27.7999 16H29.7999C29.7999 8.37842 23.6215 2.19995 16 2.19995V4.19995Z"
                                                 fill="#000552" />
                                         </svg>
-                                    </Link>
-                                </h3>
+                                        </Link>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="products_card atp_second">
-                            <img src="images/product_pen.png" class="img-fluid"
-                                alt="" />
-                            <div class="products_info">
-                                <h3
-                                    class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>ATP
-                                        / Protein Test Swabs</span>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="products_card atp_second">
+                                <img src="images/product_pen.png" class="img-fluid"
+                                    alt="" />
+                                <div class="products_info">
+                                    <h3
+                                        class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>ATP
+                                            / Protein Test Swabs</span>
                                         <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)} class="btn btn-plain"><svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="32" height="32"
@@ -254,19 +254,19 @@ const Home = () => {
                                                 d="M12.7571 10.3373C12.2071 10.2873 11.7207 10.6926 11.6707 11.2427C11.6207 11.7927 12.026 12.2791 12.5761 12.3291L12.7571 10.3373ZM20 11.9999L20.9959 11.9093C20.9522 11.4286 20.5713 11.0477 20.0905 11.004L20 11.9999ZM19.6708 19.4238C19.7208 19.9738 20.2072 20.3791 20.7572 20.3291C21.3072 20.2791 21.7125 19.7927 21.6625 19.2427L19.6708 19.4238ZM11.2928 19.2928C10.9023 19.6833 10.9023 20.3165 11.2928 20.707C11.6833 21.0976 12.3165 21.0976 12.707 20.707L11.2928 19.2928ZM12.5761 12.3291L19.9094 12.9958L20.0905 11.004L12.7571 10.3373L12.5761 12.3291ZM19.0041 12.0904L19.6708 19.4238L21.6625 19.2427L20.9959 11.9093L19.0041 12.0904ZM19.2929 11.2928L11.2928 19.2928L12.707 20.707L20.7071 12.707L19.2929 11.2928ZM27.7999 16C27.7999 22.5169 22.5169 27.7999 16 27.7999V29.7999C23.6215 29.7999 29.7999 23.6215 29.7999 16H27.7999ZM16 27.7999C9.48299 27.7999 4.19995 22.5169 4.19995 16H2.19995C2.19995 23.6215 8.37842 29.7999 16 29.7999V27.7999ZM4.19995 16C4.19995 9.48299 9.48299 4.19995 16 4.19995V2.19995C8.37842 2.19995 2.19995 8.37842 2.19995 16H4.19995ZM16 4.19995C22.5169 4.19995 27.7999 9.48299 27.7999 16H29.7999C29.7999 8.37842 23.6215 2.19995 16 2.19995V4.19995Z"
                                                 fill="#000552" />
                                         </svg>
-                                    </Link>
-                                </h3>
+                                        </Link>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="products_card">
-                            <img src="images/pc.png" class="img-fluid" alt="" />
-                            <div class="products_info">
-                                <h3
-                                    class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>CleanRead<sup>™</sup>
-                                        Reporting
-                                        Software</span>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="products_card">
+                                <img src="images/pc.png" class="img-fluid" alt="" />
+                                <div class="products_info">
+                                    <h3
+                                        class="mb-0 d-flex align-items-center gap-3 justify-content-between flex-lg-row flex-md-row flex-column"><span>CleanRead<sup>™</sup>
+                                            Reporting
+                                            Software</span>
                                         <Link to='/reporting-software' onClick={() => window.scrollTo(0, 0)} class="btn btn-plain"><svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="32" height="32"
@@ -275,14 +275,14 @@ const Home = () => {
                                                 d="M12.7571 10.3373C12.2071 10.2873 11.7207 10.6926 11.6707 11.2427C11.6207 11.7927 12.026 12.2791 12.5761 12.3291L12.7571 10.3373ZM20 11.9999L20.9959 11.9093C20.9522 11.4286 20.5713 11.0477 20.0905 11.004L20 11.9999ZM19.6708 19.4238C19.7208 19.9738 20.2072 20.3791 20.7572 20.3291C21.3072 20.2791 21.7125 19.7927 21.6625 19.2427L19.6708 19.4238ZM11.2928 19.2928C10.9023 19.6833 10.9023 20.3165 11.2928 20.707C11.6833 21.0976 12.3165 21.0976 12.707 20.707L11.2928 19.2928ZM12.5761 12.3291L19.9094 12.9958L20.0905 11.004L12.7571 10.3373L12.5761 12.3291ZM19.0041 12.0904L19.6708 19.4238L21.6625 19.2427L20.9959 11.9093L19.0041 12.0904ZM19.2929 11.2928L11.2928 19.2928L12.707 20.707L20.7071 12.707L19.2929 11.2928ZM27.7999 16C27.7999 22.5169 22.5169 27.7999 16 27.7999V29.7999C23.6215 29.7999 29.7999 23.6215 29.7999 16H27.7999ZM16 27.7999C9.48299 27.7999 4.19995 22.5169 4.19995 16H2.19995C2.19995 23.6215 8.37842 29.7999 16 29.7999V27.7999ZM4.19995 16C4.19995 9.48299 9.48299 4.19995 16 4.19995V2.19995C8.37842 2.19995 2.19995 8.37842 2.19995 16H4.19995ZM16 4.19995C22.5169 4.19995 27.7999 9.48299 27.7999 16H29.7999C29.7999 8.37842 23.6215 2.19995 16 2.19995V4.19995Z"
                                                 fill="#000552" />
                                         </svg>
-                                    </Link>
-                                </h3>
+                                        </Link>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
             <section class="about_us">
                 <div class="container">
@@ -308,9 +308,11 @@ const Home = () => {
                         </div>
                         <div
                             class="col-xl-6 col-lg-8 col-md-12 col-sm-12 col-12 mt-lg-0 d-flex align-items-center justify-content-center">
-                            <div class="logo">
-                                <img src="images/logo.png" alt="" />
-                            </div>
+                            <Link to='/' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="logo" >
+                                    <img src="images/logo.png" alt="" />
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
