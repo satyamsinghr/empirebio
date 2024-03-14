@@ -84,7 +84,7 @@ const ProductDetail = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4"    onClick={(e) => openModal(e,'handheld')}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4"    onClick={(e) => openModal(e)}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
@@ -362,7 +362,7 @@ const ProductDetail = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} type={selectedProductType}/>
+                <RequestModel closeModal={closeModal} />
             </Modal>
         </div>
     )

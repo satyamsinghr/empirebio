@@ -36,7 +36,7 @@ const Schema = z.object({
 
 })
 
-const RequestModel = ({ closeModal }) => {
+const ScheduleModel = ({ closeModal, type }) => {
     const {
         register,
         handleSubmit,
@@ -49,7 +49,7 @@ const RequestModel = ({ closeModal }) => {
 
     const onSubmit = async (values) => {
         try {
-            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/quote', {
+            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/schedule', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +61,6 @@ const RequestModel = ({ closeModal }) => {
 
         }
     };
-
     return (
         <div
             className="modal custom_modal d-flex show fade align-items-start justify-content-center">
@@ -72,7 +71,8 @@ const RequestModel = ({ closeModal }) => {
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
-                                    <h2>Get a quote</h2>
+                                    <h2>Schedule a
+                                        demo.</h2>
                                     <div className="mt-lg-5 mt-md-4 mt-3">
                                         <div>
                                             <p
@@ -316,4 +316,4 @@ const RequestModel = ({ closeModal }) => {
     )
 }
 
-export default RequestModel
+export default ScheduleModel

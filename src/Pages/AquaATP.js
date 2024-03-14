@@ -95,7 +95,7 @@ const AquaATP = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e,'aquaAtp')}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e)}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4" onClick={handleDownload}>Download
