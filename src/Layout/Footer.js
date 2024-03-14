@@ -104,7 +104,7 @@ const Footer = () => {
                         </div>
                         <div
                             class="col-lg-2 col-md-4 col-sm-6 col-6 offset-lg-1 mt-0">
-                            <div
+                            {/* <div
                                 class="d-flex flex-lg-row gap-lg-5 gap-md-4 gap-3 flex-md-column flex-column footer_nav">
                                 <h3>Socials</h3>
                                 <ul>
@@ -118,7 +118,7 @@ const Footer = () => {
                                         <a href="#">Facebook</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                         <div
                             class="col-lg-3 col-md-4 col-sm-12 col-12 offset-lg-1 mt-lg-0 mt-md-0 mt-5">
