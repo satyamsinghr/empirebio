@@ -152,7 +152,8 @@ const Reporting = () => {
                                         summaries and access them everywhere at
                                         anytime through our website.</p>
                                     <button
-                                        class="btn btn-outline-primary mt-xl-5 mt-lg-5 px-4  py-3 mt-md-4 mt-4">Book
+                                        class="btn btn-outline-primary mt-xl-5 mt-lg-5 px-4  py-3 mt-md-4 mt-4"
+                                        onClick={(e) => openModal(e, 'demo')}>Book
                                         a demo NOW</button>
                                 </div>
                             </div>
