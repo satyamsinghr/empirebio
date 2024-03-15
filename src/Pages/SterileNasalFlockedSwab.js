@@ -23,10 +23,6 @@ const TransportKitATP = () => {
         setModalIsOpen(false);
     };
 
-    const handleDownload = () => {
-        const pdfPath = 'pdf/Aqua_ATP_Detection Swab.pdf';
-        saveAs(pdfPath, 'Aqua_ATP_Detection Swab.pdf');
-    };
 
     return (
         <div>
