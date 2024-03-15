@@ -219,11 +219,13 @@ const ContactUs = () => {
                                         class="col-12 mt-lg-4 d-flex flex-lg-row gap-3 flex-md-row flex-column-reverse pt-lg-3 mt-md-4 mt-md-4 mt-4">
                                         <button
                                             class="btn btn-primary outline-dark py-3 px-4">
-                                                {load ? (
+                                                {/* {load ? (
                                                     <div className="loading-spinner" ></div>
                                                 ) : (
                                                     "Submit"
-                                                )}</button>
+                                                )} */}
+                                                Submit
+                                                </button>
                                     </div>
                                 </div>
                             </form>

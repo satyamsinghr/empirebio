@@ -320,11 +320,12 @@ const ScheduleModel = ({ closeModal, type }) => {
                                                 className="btn btn-outline-primary py-3 w-100 px-4" onClick={closeModal}>Cancel</button>
                                             <button
                                                 className="btn btn-primary outline-dark w-100 py-3 px-4">
-                                                    {load ? (
+                                                    {/* {load ? (
                                                     <div className="loading-spinner"></div>
                                                 ) : (
                                                     "Submit"
-                                                )}
+                                                )} */}
+                                                Submit
                                                 </button>
                                         </div>
                                     </div>
