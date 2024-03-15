@@ -15,6 +15,7 @@ const Header = () => {
             location.pathname === '/transport-kit-ATP' ||
             location.pathname === '/viral-transport-medium' ||
             location.pathname === '/sterile-nasal-flocked-swab' ||
+            location.pathname === '/visual-inspection-borescope' ||
             location.pathname.startsWith('/product-detail')
         );
     };
@@ -28,7 +29,7 @@ const Header = () => {
     };
     return (
         <div>
-            <header className={`${location.pathname === '/contactUs' || location.pathname === '/viral-transport-medium' || location.pathname === '/sterile-nasal-flocked-swab' || location.pathname === '/aqua-atp' || location.pathname === '/surface-atp' || location.pathname === '/transport-kit-ATP' || location.pathname === '/reporting-software' || location.pathname === '/surface-protein' || location.pathname === '/product-detail' ? 'white_header' : ''}`}>
+            <header className={`${location.pathname === '/contactUs' || location.pathname === '/viral-transport-medium' || location.pathname === '/visual-inspection-borescope' || location.pathname === '/sterile-nasal-flocked-swab' || location.pathname === '/aqua-atp' || location.pathname === '/surface-atp' || location.pathname === '/transport-kit-ATP' || location.pathname === '/reporting-software' || location.pathname === '/surface-protein' || location.pathname === '/product-detail' ? 'white_header' : ''}`}>
                 {/* <header> */}
                 <div className="container">
                     <div className="row">

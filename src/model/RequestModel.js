@@ -54,6 +54,7 @@ const RequestModel = ({ closeModal }) => {
     const [load, setLoad] = useState(false);
 
     const onSubmit = async (values) => {
+        debugger
         setLoad(true)
         try {
             const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/quote', {
@@ -320,13 +321,11 @@ const RequestModel = ({ closeModal }) => {
                                                 className="btn btn-outline-primary py-3 w-100 px-4" onClick={closeModal}>Cancel</button>
                                             <button
                                                 className="btn btn-primary outline-dark w-100 py-3 px-4">
-                                                {/* {load ? (
-                                                    <div className="loading-spinner"></div>
+                                                {load ? (
+                                                    <div className="loading-spinner loader"></div>
                                                 ) : (
                                                     "Submit"
-                                                )} */}
-                                                Submit
-                                                </button>
+                                                )}</button>
                                         </div>
                                     </div>
                                 </form>

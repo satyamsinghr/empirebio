@@ -182,6 +182,23 @@ const Product = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card product_eight">
+                                    <img src="images/product_9.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Visual Inspection Borescope</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/visual-inspection-borescope' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a
+                                                onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

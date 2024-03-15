@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
 import { saveAs } from 'file-saver';
 
+
 const TransportKitATP = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const navigate = useNavigate();
@@ -27,6 +28,7 @@ const TransportKitATP = () => {
         const pdfPath = 'pdf/Aqua_ATP_Detection Swab.pdf';
         saveAs(pdfPath, 'Aqua_ATP_Detection Swab.pdf');
     };
+
 
     return (
         <div>
@@ -63,7 +65,7 @@ const TransportKitATP = () => {
                                         |
                                     </li>
                                     <li class="active">
-                                        Viral Transport Medium w/ Flocked Swab
+                                        Visual Inspection Borescope
                                     </li>
                                 </ul>
                             </div>
@@ -75,49 +77,129 @@ const TransportKitATP = () => {
                             class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 d-flex align-items-start">
                             <div class="section_content h-auto">
                                 {/* <img src="images/surface_icon.png" className='d-lg-block d-md-block d-none' alt="" /> */}
-                                <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">COVID-19 Collection & Transport Kit Viral Transport Medium & Flocked Swab</h2>
-                                <p class="mb-4"><b>Innovative Technology for Sample Collection & Diagnostics</b></p>
-                                <p class="mb-4">The Viral Transport Medium & Flocked Swab Kit offered by Empire Bio Diagnostics is for the collection, preservation, and transportation of viruses, such as coronavirus (COVID-19).</p>
+                                <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">Visual Inspection Borescope</h2>
+                                <p class="mb-4"><b>Advanced AI powered visual inspection tool for cannulated instruments.</b></p>
+                                <p class="mb-4">The Ruhof Corporation’s VIB, Visual Inspection Borescope, allows  for instant visual detection of internal debris and damage inside  the channels of an endoscope, reducing the risk of device related  infections. Unlike competitive products, the Ruhof VIB’s perceptive,  user-friendly software stores and archives both images and videos for  documentation and reporting</p>
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
                                         class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e)}>Request
                                         a quote</button>
+                                    <button
+                                        class="btn btn-outline-primary py-3 px-4" onClick={handleDownload}>Download
+                                        brochure</button>
+                                </div>
+
+
+                                <div class="row g-4 mt-0">
+                                    <div
+                                        class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="page_card">
+                                            <img src="images/ai-power.png" alt="" />
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">AI powered inspection</h3>
+                                                <p class="mb-0">AI auto detects the abnormalities inside the endoscope channel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="page_card">
+                                            <img src="images/hd-ready.png" alt="" />
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">HD Ready</h3>
+                                                <p class="mb-0">High resolution images and live video feeds.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="page_card">
+                                            <img src="images/on-board.png" alt="" />
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">Onboard storage</h3>
+                                                <p class="mb-0">Ability to store, archive and share images and videos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div
                                     class="section_content detail_product_card mt-lg-5 mt-md-4 mt-4">
                                     <h3 class="mb-lg-4 mb-md-4 mb-3"><b>Features</b></h3>
-                                    <p className='mb-1'>Vial features</p>
                                     <ul class="surface_list">
-                                        <li class="mb-2">18 Month Shelf Life.</li>
-                                        <li class="mb-2">Room temperature stable.</li>
-                                        <li class="mb-2">Available in 3ml.</li>
-                                        <li class="mb-2">Provides a pH balanced environment.</li>
-                                        <li class="mb-2">A phenol red pH indicator provides a visual gauge of the medium integrity throughout the storage and life of the product.</li>
-                                        <li class="mb-2">Includes antibiotics to inhibit bacteria and fungal flora.</li>
-                                    </ul>
-                                    <p className='mb-1 mt-lg-4 mt-md-4 mt-3'>Flocked Swab Features</p>
-                                    <ul class="surface_list">
-                                        <li class="mb-2">Increased Assay Sensitivity.</li>
-                                        <li class="mb-2">Ergonomic and Anatomic Design.</li>
-                                        <li class="mb-2">Improved Sample Collection.</li>
-                                        <li class="mb-2">Certified Free of Inhibitors and Interference.</li>
-                                        <li class="mb-2">Highly Suited to Automation.</li>
+                                        <li class="mb-2">High-definition camera with 120 degree field of view</li>
+                                        <li class="mb-2">Fully integrated LED light source with adjustable  brightness control for sharper images</li>
+                                        <li class="mb-2">High quality 21 inch color display</li>
+                                        <li class="mb-2">Minimum insertion diameter: 1.8mm; working length: 3.0 meters;  will also offer variable diameters and lengths upon request</li>
+                                        <li class="mb-2">System is water-resistant and easy to clean with  enzymatic detergent/disinfectant</li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                         <div
                             class="col-xl-5 col-lg-5 col-md-12 d-flex align-items-start justify-content-center col-sm-12 col-12">
                             <div class="surface_img">
                                 {/* <img src="images/surface_img.png" width="100%" alt /> */}
-                                <img src="images/transport-kit.png" width="100%" alt="" />
+                                <img src="images/visual-inspection-borescope.png" width="100%" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section className='scope_carousel'>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div
+                                class="section_content detail_product_card">
+                                <h3 class="mb-0"><b>Scope Inspection Guidelines and Recommendations</b> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='row g-4 pt-lg-4 pt-md-4 pt-4'>
+                        <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>IAHCSMM</h3>
+                                <p className='mb-0'>(Endoscope Reprocessing Manual, 2017, pg.61) “At the workstation, each endoscope must be  carefully inspected for cleanliness, proper function  and possible defects; therefore, adequate lighting  and magnification tools are essential.”</p>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>2017 AORN Guidelines</h3>
+                                <p className='mb-0'>“Lighted magnification should be used to inspect  endoscopes and accessories for cleanliness and  damage.4“  “Endoscopic cameras and borescopes penetrate the  lumen and allow for improved visual inspection.4“</p>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>ANSI/AAMI ST91: 2015</h3>
+                                <p className='mb-0'>“Tools such as video borescopes of an appropriate  dimension (length and diameter) may be used  to visually inspect the internal channels of some  medical devices.3”</p>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>FDA (October 2014)</h3>
+                                <p className='mb-0'>FDA Medical Safety and Alert document mentions ”inspecting the inside of the devices (arthroscopic  shavers) and using an endoscope to inspect the  channels of the shaver handpiece.”</p>
+                            </div>
+                        </div>
+                        {/* <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>CDC</h3>
+                                <p className='mb-0'>“Careful visual inspection should be conducted to  detect the presence of any residual soil. Inspection  using magnification and additional illumination  might identify residues more readily than the  unaided eye. Users should inspect every device  for organic soil and contamination in a simple  functionality test.”</p>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <div className='inspection_card section_content'>
+                                <h3 className='mb-2'>SGNA</h3>
+                                <p className='mb-0'>“Visual inspection is recommended to make sure  the endoscope is visibly clean.”  “Inspect equipment surfaces for breaks in integrity  that would impair either cleaning or disinfection/ sterilization.”</p>
+                            </div>
+                        </div> */}
+                    </div>
+                </div>
+            </section>
+
             <section class="compatible">
                 <div class="container">
                     <div class="row g-4">
@@ -182,8 +264,8 @@ const TransportKitATP = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} type={selectedProductType}/>
-            </Modal> 
+                <RequestModel closeModal={closeModal} type={selectedProductType} />
+            </Modal>
         </div>
     )
 }

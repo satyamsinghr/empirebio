@@ -13,6 +13,7 @@ import Reporting from './Pages/Reporting';
 import TransportKitATP from './Pages/TransportKitATP';
 import ViralTransportMedium from './Pages/ViralTransportMedium';
 import SterileNasalFlockedSwab from './Pages/SterileNasalFlockedSwab';
+import VisualInspectionBorescope from './Pages/VisualInspectionBorescope';
 const Routing = () => {
     return (
             <Routes>
@@ -28,6 +29,7 @@ const Routing = () => {
               <Route path="transport-kit-ATP" element={<TransportKitATP />} />
               <Route path="viral-transport-medium" element={<ViralTransportMedium />} />
               <Route path="sterile-nasal-flocked-swab" element={<SterileNasalFlockedSwab />} />
+              <Route path="visual-inspection-borescope" element={<VisualInspectionBorescope />} />
 
             </Routes>
     )

@@ -114,7 +114,7 @@ const ContactUs = () => {
                                         )}
                                     </div>
                                     <div
-                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-start justify-content-end flex-column mt-lg-0 mt-md-0 mt-3">
+                                        class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-start justify-content-start name_input flex-column mt-lg-0 mt-md-0 mt-3">
                                         <input type="text"
                                             className={`form-control ${errors.lastName ? "is-invalid" : ""
                                                 }`}
@@ -218,14 +218,12 @@ const ContactUs = () => {
                                     <div
                                         class="col-12 mt-lg-4 d-flex flex-lg-row gap-3 flex-md-row flex-column-reverse pt-lg-3 mt-md-4 mt-md-4 mt-4">
                                         <button
-                                            class="btn btn-primary outline-dark py-3 px-4">
-                                                {/* {load ? (
-                                                    <div className="loading-spinner" ></div>
+                                            class="btn btn-primary outline-dark py-3 px-4" style={{minWidth:'107px'}}>
+                                                {load ? (
+                                                    <div className="loading-spinner loader" ></div>
                                                 ) : (
                                                     "Submit"
-                                                )} */}
-                                                Submit
-                                                </button>
+                                                )}</button>
                                     </div>
                                 </div>
                             </form>
