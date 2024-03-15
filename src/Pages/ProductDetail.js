@@ -12,8 +12,8 @@ const ProductDetail = () => {
         navigate(-1);
     };
 
-    
-    const openModal = (event,productType) => {
+
+    const openModal = (event, productType) => {
         event.preventDefault();
         setSelectedProductType(productType);
         setModalIsOpen(true);
@@ -25,7 +25,7 @@ const ProductDetail = () => {
     const handleDownload = () => {
         const pdfPath = 'pdf/Handheld_IFU_rev.pdf';
         saveAs(pdfPath, 'Handheld_IFU_rev.pdf');
-      };
+    };
 
     return (
         <div>
@@ -73,8 +73,8 @@ const ProductDetail = () => {
                         <div
                             class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-start">
                             <div class="section_content h-auto">
-                                <img src="images/product_detail.png" width="199px" alt="" />
-                                <h2 class="my-4">CleanRead<sup>™</sup> Handheld ATP
+                                <img src="images/product_detail.png" className='d-lg-block d-md-block d-none' width="199px" alt="" />
+                                <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead<sup>™</sup> Handheld ATP
                                     Testing Device</h2>
                                 <p class="mb-4"><b>Our flagship monitoring system
                                     uses bioluminescence technology for
@@ -82,115 +82,121 @@ const ProductDetail = () => {
                                     high-traffic areas and critical
                                     environments.</b></p>
                                 <div
-                                    class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
+                                    class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4"    onClick={(e) => openModal(e)}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e)}>Request
                                         a quote</button>
                                     <button
-                                        class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
+                                        class="btn btn-outline-primary py-3 px-4" onClick={handleDownload}>Download
                                         brochure</button>
                                 </div>
 
-                                <div class="row g-4 mt-lg-5 mt-md-4 mt-4">
+                                <div class="row g-4 mt-lg-4 mt-md-4 mt-0">
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
                                             <img src="images/offline.png" alt="" />
-                                            <h3 class="mb-2 mt-3">Offline
-                                                Functionality</h3>
-                                            <p class="mb-0">Automatically sync data
-                                                with the CleanRead™ Contamination
-                                                Reporting web portal when Wi-Fi is
-                                                accessible.</p>
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">Offline
+                                                    Functionality</h3>
+                                                <p class="mb-0">Automatically sync data
+                                                    with the CleanRead™ Contamination
+                                                    Reporting web portal when Wi-Fi is
+                                                    accessible.</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
                                             <img src="images/rfid.png" alt="" />
-                                            <h3 class="mb-2 mt-3">RFID & Barcode
-                                                Capability</h3>
-                                            <p class="mb-0">Scan RFID tags and
-                                                barcodes on equipment to associate
-                                                them with test points for easy
-                                                initiation of tests.</p>
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">RFID & Barcode
+                                                    Capability</h3>
+                                                <p class="mb-0">Scan RFID tags and
+                                                    barcodes on equipment to associate
+                                                    them with test points for easy
+                                                    initiation of tests.</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
                                             <img src="images/al-based.png" alt="" />
-                                            <h3 class="mb-2 mt-3">AI based Test
-                                                Scheduling</h3>
-                                            <p class="mb-0">Set up daily testing
-                                                schedules through the dashboard.</p>
+                                            <div>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">AI based Test
+                                                    Scheduling</h3>
+                                                <p class="mb-0">Set up daily testing
+                                                    schedules through the dashboard.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div id="carouselExampleIndicators"
-                            class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="banner_carousel">
-                                        <img src="images/carousel_1.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="banner_carousel">
-                                        <img src="images/indi_1.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="banner_carousel">
-                                        <img src="images/indi_2.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="banner_carousel">
-                                        <img src="images/indi_3.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="banner_carousel">
-                                        <img src="images/indi_4.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
 
-                            <ul
-                                class="carousel_indicator carousel-indicators overflow-auto gap-4 mt-4 d-flex justify-content-start align-items-center">
-                                <li type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="1" class="active"
-                                    aria-current="true"
-                                    aria-label="Slide 1">
-                                    <img src="images/indi_1.png" alt="" />
-                                </li>
-                                <li type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="2"
-                                    aria-label="Slide 2">
-                                    <img src="images/indi_2.png" alt="" />
-                                </li>
-                                <li type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="3"
-                                    aria-label="Slide 3">
-                                    <img src="images/indi_3.png" alt="" />
-                                </li>
-                                <li type="button"
-                                    data-bs-target="#carouselExampleIndicators"
-                                    data-bs-slide-to="4"
-                                    aria-label="Slide 4">
-                                    <img src="images/indi_4.png" alt="" />
-                                </li>
-                            </ul>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div id="carouselExampleIndicators"
+                                class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="banner_carousel">
+                                            <img src="images/carousel_1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="banner_carousel">
+                                            <img src="images/indi_1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="banner_carousel">
+                                            <img src="images/indi_2.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="banner_carousel">
+                                            <img src="images/indi_3.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="banner_carousel">
+                                            <img src="images/indi_4.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul
+                                    class="carousel_indicator carousel-indicators overflow-auto gap-lg-4 gap-md-4 gap-2 mt-4 d-flex justify-content-start align-items-center">
+                                    <li type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1">
+                                        <img src="images/indi_1.png" alt="" />
+                                    </li>
+                                    <li type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 2">
+                                        <img src="images/indi_2.png" alt="" />
+                                    </li>
+                                    <li type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3"
+                                        aria-label="Slide 3">
+                                        <img src="images/indi_3.png" alt="" />
+                                    </li>
+                                    <li type="button"
+                                        data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="4"
+                                        aria-label="Slide 4">
+                                        <img src="images/indi_4.png" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
                     </div>
                 </div>
@@ -203,20 +209,20 @@ const ProductDetail = () => {
                                 class="section_content detail_product_card">
                                 <h3 class="mb-3"><b> Product details</b></h3>
                                 <p class="mb-0">The CleanRead™ Handheld ATP Testing
-                                Device is
-                                designed for healthcare facilities demanding
-                                quick, easy-to-use, and reliable solutions for
-                                assessing cleaning protocols and verifying
-                                efficacy within 15 seconds.</p>
+                                    Device is
+                                    designed for healthcare facilities demanding
+                                    quick, easy-to-use, and reliable solutions for
+                                    assessing cleaning protocols and verifying
+                                    efficacy within 15 seconds.</p>
                                 {/* <button class="btn btn-outline-primary">Download
                                     user manual</button> */}
                             </div>
                         </div>
                     </div>
                     <div
-                        class="row g-4 justify-content-center mt-lg-0 mt-md-4 mt-4">
+                        class="row g-4 justify-content-center mt-lg-0 mt-md-4 mt-0">
                         <div
-                            class="col-xl-3 col-lg-4 col-md-12 col-12 d-flex flex-column justify-content-center">
+                            class="col-xl-3 col-lg-4 col-md-12 col-12 d-lg-flex d-md-flex d-none flex-column justify-content-center">
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
@@ -257,7 +263,7 @@ const ProductDetail = () => {
                             </div>
                         </div>
                         <div
-                            class="col-xl-3 col-lg-4 col-md-12 col-12 d-flex flex-column justify-content-center">
+                            class="col-xl-3 col-lg-4 col-md-12 col-12  d-lg-flex d-md-flex d-none flex-column justify-content-center">
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
@@ -309,8 +315,8 @@ const ProductDetail = () => {
                             <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
                                     <img src="images/product_2.png" alt="" />
-                                    <div class="product_card_ingo">
-                                        <h3 class="mb-3">Surface ATP Detection Swabs</h3>
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Surface ATP Detection Swabs</h3>
                                         <div class="section_content">
                                             <p class="mb-0">Precision swabs for
                                                 comprehensive surface
@@ -325,8 +331,8 @@ const ProductDetail = () => {
                             <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
                                     <img src="images/product_3.png" alt="" />
-                                    <div class="product_card_ingo">
-                                        <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
                                         <div class="section_content">
                                             <p class="mb-0">Precision swabs for
                                                 comprehensive surface testing,
@@ -341,8 +347,8 @@ const ProductDetail = () => {
                             <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
                                     <img src="images/product_4.png" alt="" />
-                                    <div class="product_card_ingo">
-                                        <h3 class="mb-3">Surface Protein Detection
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Surface Protein Detection
                                             Swabs</h3>
                                         <div class="section_content">
                                             <p class="mb-0">Precision swabs for

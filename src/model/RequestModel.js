@@ -68,12 +68,13 @@ const RequestModel = ({ closeModal }) => {
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-body">
-                        <div className="row g-xl-5 g-lg-4 g-md-5 g-5">
+                        <div className="row g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
-                                    <h2>Get a quote</h2>
-                                    <div className="mt-lg-5 mt-md-4 mt-3">
+                                    <hr className='d-lg-none d-md-none d-block contact_sep my-2' />
+                                    <h2 className='d-lg-block d-md-block d-none'>Get a quote</h2>
+                                    <div className="mt-lg-5 mt-md-4 mt-0 pt-lg-0 pt-md-0 pt-4">
                                         <div>
                                             <p
                                                 className="d-flex align-items-center gap-2"><svg
@@ -100,7 +101,7 @@ const RequestModel = ({ closeModal }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mt-lg-5 mt-md-4 mt-3">
+                                    <div className="mt-lg-5 mt-md-4 mt-4">
                                         <div>
                                             <p
                                                 className="d-flex align-items-center gap-2">
@@ -124,7 +125,7 @@ const RequestModel = ({ closeModal }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mt-lg-5 mt-md-4 mt-3">
+                                    <div className="mt-lg-5 mt-md-4 mt-4">
                                         <div>
                                             <p
                                                 className="d-flex align-items-center gap-2">
@@ -152,6 +153,9 @@ const RequestModel = ({ closeModal }) => {
                                 </div>
                             </div>
                             <div className="col-xl-7 col-lg-7 col-md-7 col-12">
+                                <div className="section_content">
+                                    <h2 className='d-lg-none d-md-none d-block mb-4 pb-2'>Get a quote</h2>
+                                </div>
                                 <form className="form_field" onSubmit={handleSubmit(onSubmit)}>
                                     <div className="row">
                                         <div
@@ -176,7 +180,7 @@ const RequestModel = ({ closeModal }) => {
                                             )}
                                         </div>
                                         <div
-                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-end mt-lg-0 mt-md-0 mt-3">
+                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-end mt-lg-0 mt-md-0 mt-2">
                                             <input type="text"
                                                 className={`form-control ${errors.lastName ? "is-invalid" : ""
                                                     }`}
@@ -299,7 +303,7 @@ const RequestModel = ({ closeModal }) => {
                                             )}
                                         </div>
                                         <div
-                                            className="col-12 mt-lg-4 d-flex flex-lg-row gap-3 flex-md-row flex-column-reverse pt-lg-3 mt-md-4 mt-md-4 mt-4">
+                                            className="col-12 mt-lg-4 d-flex flex-lg-row gap-3 flex-md-row flex-column-reverse pt-lg-3 mt-md-4 mt-md-4 mt-4 pt-lg-0 pt-md-0 pt-2">
                                             <button
                                                 className="btn btn-outline-primary py-3 w-100 px-4" onClick={closeModal}>Cancel</button>
                                             <button

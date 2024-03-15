@@ -1,12 +1,14 @@
-import React           from 'react'
-import { useForm }     from "react-hook-form";
+import React from 'react'
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z }           from "zod";
+import { z } from "zod";
 
 const Schema = z.object({
     firstName: z.string().min(1, { message: "First Name is required" }).refine((value) => !/\d/.test(value), {
-            message: "First Name should not contain numbers",}).refine((value) => !/\s/.test(value), {
-            message: "First Name should not contain space", }),
+        message: "First Name should not contain numbers",
+    }).refine((value) => !/\s/.test(value), {
+        message: "First Name should not contain space",
+    }),
     lastName: z
         .string().min(1, { message: "Last Name is required" }).refine((value) => !/\d/.test(value), {
             message: "Last Name should not contain numbers",
@@ -57,20 +59,21 @@ const ContactUs = () => {
         <div>
             <section class="siteBanner contact_banner">
                 <div class="container">
-                    <div class="row g-4">
+                    <div class="row g-4 flex-lg-row flex-md-row flex-column-reverse">
                         <div
                             class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-start">
-                            <div class="section_content banner_content h-auto">
-                                <h2 class="mb-lg-5 mb-md-4 mb-4">Contact us</h2>
-                                <p class="mb-lg-5 mb-md-4 mb-4">280 Duffy Avenue
+                            <div class="section_content banner_content h-auto w-100">
+                                <hr className='d-lg-none d-md-none d-block contact_sep' />
+                                <h2 class="mb-lg-5 mb-md-4 mb-4 d-lg-block d-mb-block d-none">Contact us</h2>
+                                <p class="mb-lg-5 mb-md-4 mb-3">280 Duffy Avenue
                                     Hicksville, NY 11801</p>
                                 <p class="mb-2">Toll Free: 1 (833) 455-7700</p>
                                 <p class="mb-2">Local: 1 (516) 696-0822</p>
                                 <p class="mb-0">Fax: (516) 248-6456</p>
-                                <p class="mt-lg-5 mt-md-4 mt-4">info@ebdny.com</p>
+                                <p class="mt-lg-5 mt-md-4 mt-3 mb-0">info@ebdny.com</p>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 d-lg-block d-md-block d-none">
                             <div class="map">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.970117587308!2d-73.54450302415447!3d40.76268197138597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c280db7c6b03c7%3A0x4a737b3230bf3a54!2s280%20Duffy%20Ave%2C%20Hicksville%2C%20NY%2011801%2C%20USA!5e0!3m2!1sen!2sin!4v1709547317450!5m2!1sen!2sin"
@@ -80,7 +83,9 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12">
-
+                            <div className='section_content banner_content h-auto'>
+                                <h2 class="mb-lg-5 mb-md-4 mb-4 d-lg-none d-mb-none d-block">Contact us</h2>
+                            </div>
                             <form class="form_field" onSubmit={handleSubmit(onSubmit)}>
                                 <div class="row">
                                     <div

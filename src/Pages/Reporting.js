@@ -77,16 +77,16 @@ const Reporting = () => {
                             class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-start">
                             <div>
                                 <div class="section_content banner_content h-auto">
-                                    <h2 class="my-4">CleanRead™ Reporting
+                                    <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead™ Reporting
                                         Software</h2>
                                 </div>
                                 <div class="section_content h-auto">
-                                    <p>RLU test values are seamless synchronized
+                                    <p className='mb-4'>RLU test values are seamless synchronized
                                         from the CleanRead™ Handheld device to a
                                         robust dashboard, delivering actionable
                                         real-time results.</p>
                                     <div
-                                        class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
+                                        class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                         <button
                                             class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e, 'quote')}>Request
                                             a quote</button>
@@ -95,12 +95,12 @@ const Reporting = () => {
                                             a demo</button>
                                     </div>
                                 </div>
-                                <div class="row g-4 mt-lg-5 mt-md-4 mt-4">
+                                <div class="row g-4 mt-lg-5 mt-md-4 mt-0">
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12 mt-lg-0">
                                         <div class="page_card">
                                             <img src="images/fully-hip.png" alt="" />
-                                            <h3 class="mb-0 mt-3">Fully HIPAA
+                                            <h3 class="mb-0 mt-lg-3 mt-md-3 mt-0">Fully HIPAA
                                                 Compliant
                                                 cloud-based app.</h3>
                                         </div>
@@ -109,7 +109,7 @@ const Reporting = () => {
                                         class="col-lg-4 col-md-4 col-sm-12 col-12 mt-lg-0">
                                         <div class="page_card">
                                             <img src="images/Predective.png" alt="" />
-                                            <h3 class="mb-0 mt-3">Predective and
+                                            <h3 class="mb-0 mt-lg-3 mt-md-3 mt-0">Predective and
                                                 automated scheduling with AI.
                                             </h3>
                                         </div>
@@ -118,7 +118,7 @@ const Reporting = () => {
                                         class="col-lg-4 col-md-4 col-sm-12 col-12 mt-lg-0">
                                         <div class="page_card">
                                             <img src="images/Streamlined.png" alt="" />
-                                            <h3 class="mb-0 mt-3">Streamlined
+                                            <h3 class="mb-0 mt-lg-3 mt-md-3 mt-0">Streamlined
                                                 executive reporting and
                                                 documentation.</h3>
                                         </div>
@@ -145,10 +145,10 @@ const Reporting = () => {
                         <div
                             class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-center mt-lg-0">
                             <div class="section_content">
-                                <div class="product_card_ingo">
-                                    <h2 class="mb-4">Data driven decisions for an
+                                <div class="product_card_ingo p-0">
+                                    <h2 class="mb-lg-4 mb-md-4 mb-3">Data driven decisions for an
                                         efficient workflow.</h2>
-                                    <p>Generate customizable reports, monitoring
+                                    <p className='mb-0'>Generate customizable reports, monitoring
                                         summaries and access them everywhere at
                                         anytime through our website.</p>
                                     <button

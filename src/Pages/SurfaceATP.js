@@ -74,14 +74,14 @@ const SurfaceATP = () => {
                         <div
                             class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-start">
                             <div class="section_content h-auto">
-                                <img src="images/surface_icon.png" alt="" />
-                                <h2 class="my-4">CleanRead™ Surface ATP Detection
+                                <img src="images/surface_icon.png" className='d-lg-block d-md-block d-none' alt="" />
+                                <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead™ Surface ATP Detection
                                     Swabs</h2>
                                 <p class="mb-4"><b>Verify cleanliness and measure
                                     microbial contamination on any scope,
                                     cannulated instrument or surface in 15
                                     seconds!</b></p>
-                                <p>CleanRead™ Surface ATP Detection Swab provides a
+                                <p class="mb-4">CleanRead™ Surface ATP Detection Swab provides a
                                     rapid, simple and reliable way to verify
                                     cleanliness and measure microbial contamination
                                     on the surface of surgical instruments, scopes,
@@ -89,7 +89,7 @@ const SurfaceATP = () => {
                                     rooms, restrooms, waiting rooms – anywhere that
                                     can harbor possible contaminants.</p>
                                 <div
-                                    class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-3 flex-md-row flex-column-reverse">
+                                    class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
                                         class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e,'surfaceAtp')}>Request
                                         a quote</button>
@@ -100,7 +100,7 @@ const SurfaceATP = () => {
 
                                 <div
                                     class="section_content detail_product_card mt-lg-5 mt-md-4 mt-4">
-                                    <h3 class="mb-4"><b>Features</b></h3>
+                                    <h3 class="mb-lg-4 mb-md-4 mb-3"><b>Features</b></h3>
                                     <ul class="surface_list">
                                         <li class="mb-2">All-in-one sampling device.</li>
                                         <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li>
@@ -125,7 +125,7 @@ const SurfaceATP = () => {
                         <div class="col-12">
                             <div
                                 class="section_content detail_product_card">
-                                <h3 class="mb-2"><b>More from CleanRead™ </b> </h3>
+                                <h3 class="mb-lg-2 mb-md-2 mb-0"><b>More from CleanRead™ </b> </h3>
                             </div>
                         </div>
 
@@ -133,8 +133,8 @@ const SurfaceATP = () => {
                   <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
                             <div class="product_card">
                                 <img src="images/product_1.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">CleanRead™ Handheld</h3>
+                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                    <h3 class="mb-lg-3 mb-md-3 mb-4">CleanRead™ Handheld</h3>
                                     <div class="section_content">
                                         <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
                                     </div>
@@ -146,8 +146,8 @@ const SurfaceATP = () => {
                  <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
                             <div class="product_card">
                                 <img src="images/product_3.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Aqua ATP Detection Swabs</h3>
+                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
                                     <div class="section_content">
                                         <p class="mb-0">Precision swabs for
                                             comprehensive surface testing,
@@ -162,8 +162,8 @@ const SurfaceATP = () => {
               <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
                             <div class="product_card">
                                 <img src="images/product_4.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-3">Surface Protein Detection
+                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Surface Protein Detection
                                         Swabs</h3>
                                     <div class="section_content">
                                         <p class="mb-0">Precision swabs for
