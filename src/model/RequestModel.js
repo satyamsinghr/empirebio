@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Header from '../Layout/Header';
 import Footer from '../Layout/Footer';
 import HeaderModel from '../Layout/HeaderModel';
+// import { toast } from 'react-toastify';
 
 const Schema = z.object({
     firstName: z
@@ -50,9 +51,12 @@ const RequestModel = ({ closeModal }) => {
         resolver: zodResolver(Schema),
     });
 
+    const [load, setLoad] = useState(false);
+
     const onSubmit = async (values) => {
+        setLoad(true)
         try {
-            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/quote', {
+            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/quote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -60,9 +64,11 @@ const RequestModel = ({ closeModal }) => {
                 body: JSON.stringify(values),
             });
             closeModal()
+            // toast.success('Request submitted successfully!');
         } catch (error) {
-
+            // toast.error('Failed to submit. Please try again later.');
         }
+        setLoad(false);
     };
 
     return (
@@ -313,7 +319,12 @@ const RequestModel = ({ closeModal }) => {
                                             <button
                                                 className="btn btn-outline-primary py-3 w-100 px-4" onClick={closeModal}>Cancel</button>
                                             <button
-                                                className="btn btn-primary outline-dark w-100 py-3 px-4">Submit</button>
+                                                className="btn btn-primary outline-dark w-100 py-3 px-4">
+                                                {load ? (
+                                                    <div className="loading-spinner"></div>
+                                                ) : (
+                                                    "Submit"
+                                                )}</button>
                                         </div>
                                     </div>
                                 </form>

@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+// import { toast } from 'react-toastify';
 
 const Schema = z.object({
     firstName: z.string().min(1, { message: "First Name is required" }).refine((value) => !/\d/.test(value), {
@@ -39,8 +40,10 @@ const ContactUs = () => {
         resolver: zodResolver(Schema),
     });
 
+    const [load, setLoad] = useState(false);
 
     const onSubmit = async (values) => {
+        setLoad(true)
         try {
             const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/contacts', {
                 method: 'POST',
@@ -50,10 +53,11 @@ const ContactUs = () => {
                 body: JSON.stringify(values),
             });
             reset()
-
+            // toast.success('Request submitted successfully!');
         } catch (error) {
-
+            // toast.error('Failed to submit. Please try again later.');
         }
+        setLoad(false)
     };
     return (
         <div>
@@ -214,7 +218,12 @@ const ContactUs = () => {
                                     <div
                                         class="col-12 mt-lg-4 d-flex flex-lg-row gap-3 flex-md-row flex-column-reverse pt-lg-3 mt-md-4 mt-md-4 mt-4">
                                         <button
-                                            class="btn btn-primary outline-dark py-3 px-4">Submit</button>
+                                            class="btn btn-primary outline-dark py-3 px-4">
+                                                {load ? (
+                                                    <div className="loading-spinner" ></div>
+                                                ) : (
+                                                    "Submit"
+                                                )}</button>
                                     </div>
                                 </div>
                             </form>
