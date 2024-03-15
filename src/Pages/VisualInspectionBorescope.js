@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
 import { saveAs } from 'file-saver';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 
 const TransportKitATP = () => {
@@ -25,8 +28,8 @@ const TransportKitATP = () => {
     };
 
     const handleDownload = () => {
-        const pdfPath = 'pdf/Aqua_ATP_Detection Swab.pdf';
-        saveAs(pdfPath, 'Aqua_ATP_Detection Swab.pdf');
+        const pdfPath = 'pdf/VIB_Marketing_Short_Literature.pdf';
+        saveAs(pdfPath, 'VIB_Marketing_Short_Literature.pdf');
     };
 
 
@@ -160,42 +163,49 @@ const TransportKitATP = () => {
                         </div>
                     </div>
                     <div className='row g-4 pt-lg-4 pt-md-4 pt-4'>
-                        <div className='col'>
+                        <OwlCarousel className="owl-theme" loop margin={24} nav={false} dots={false} autoplay={true} autoplayTimeout={3000}
+                            responsive={{
+                                0: {
+                                    items: 1,
+                                },
+                                576: {
+                                    items: 1,
+                                },
+                                768: {
+                                    items: 2,
+                                },
+                                992: {
+                                    items: 3,
+                                },
+                                1250: {
+                                    items: 4,
+                                },
+                            }}>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>IAHCSMM</h3>
                                 <p className='mb-0'>(Endoscope Reprocessing Manual, 2017, pg.61) “At the workstation, each endoscope must be  carefully inspected for cleanliness, proper function  and possible defects; therefore, adequate lighting  and magnification tools are essential.”</p>
                             </div>
-                        </div>
-                        <div className='col'>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>2017 AORN Guidelines</h3>
                                 <p className='mb-0'>“Lighted magnification should be used to inspect  endoscopes and accessories for cleanliness and  damage.4“  “Endoscopic cameras and borescopes penetrate the  lumen and allow for improved visual inspection.4“</p>
                             </div>
-                        </div>
-                        <div className='col'>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>ANSI/AAMI ST91: 2015</h3>
                                 <p className='mb-0'>“Tools such as video borescopes of an appropriate  dimension (length and diameter) may be used  to visually inspect the internal channels of some  medical devices.3”</p>
                             </div>
-                        </div>
-                        <div className='col'>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>FDA (October 2014)</h3>
                                 <p className='mb-0'>FDA Medical Safety and Alert document mentions ”inspecting the inside of the devices (arthroscopic  shavers) and using an endoscope to inspect the  channels of the shaver handpiece.”</p>
                             </div>
-                        </div>
-                        {/* <div className='col'>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>CDC</h3>
                                 <p className='mb-0'>“Careful visual inspection should be conducted to  detect the presence of any residual soil. Inspection  using magnification and additional illumination  might identify residues more readily than the  unaided eye. Users should inspect every device  for organic soil and contamination in a simple  functionality test.”</p>
                             </div>
-                        </div>
-                        <div className='col'>
                             <div className='inspection_card section_content'>
                                 <h3 className='mb-2'>SGNA</h3>
                                 <p className='mb-0'>“Visual inspection is recommended to make sure  the endoscope is visibly clean.”  “Inspect equipment surfaces for breaks in integrity  that would impair either cleaning or disinfection/ sterilization.”</p>
                             </div>
-                        </div> */}
+                        </OwlCarousel>
                     </div>
                 </div>
             </section>

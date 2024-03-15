@@ -54,10 +54,9 @@ const RequestModel = ({ closeModal }) => {
     const [load, setLoad] = useState(false);
 
     const onSubmit = async (values) => {
-        debugger
         setLoad(true)
         try {
-            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/quote', {
+            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/quote', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
