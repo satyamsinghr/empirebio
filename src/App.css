@@ -782,6 +782,10 @@ hr.about_sep {
     margin-bottom: 32px;
 }
 
+.name_input {
+    padding-top: 26px;
+}
+
 /*=== media query ===*/
 
 /* @media (min-width:1500px) {
@@ -1323,6 +1327,11 @@ hr.about_sep {
 
     section.data_drive {
         padding: 0px 12px 24px;
+    }
+
+    
+    .name_input {
+        padding-top: 0px;
     }
 
     /* 

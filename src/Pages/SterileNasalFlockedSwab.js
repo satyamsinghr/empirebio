@@ -133,11 +133,11 @@ const TransportKitATP = () => {
                             </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
+                            <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
                                 <div class="product_card">
                                     <img src="images/product_2.png" alt="" />
                                     <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Surface ATP Detection Swabs</h3>
                                         <div class="section_content">
                                             <p class="mb-0">Precision swabs for
                                                 comprehensive surface testing,

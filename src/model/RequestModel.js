@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Header from '../Layout/Header';
 import Footer from '../Layout/Footer';
+import HeaderModel from '../Layout/HeaderModel';
 
 const Schema = z.object({
     firstName: z
@@ -71,7 +72,7 @@ const RequestModel = ({ closeModal }) => {
                 <div className="modal-content">
                     <div className="modal-body">
                         <div className='d-lg-none modal_header d-md-none d-block'>
-                            <Header />
+                            <HeaderModel />
                         </div>
                         <div className="row modal_body g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
                             <div
@@ -185,7 +186,7 @@ const RequestModel = ({ closeModal }) => {
                                             )}
                                         </div>
                                         <div
-                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-end mt-lg-0 mt-md-0 mt-2">
+                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-start mt-lg-0 mt-md-0 mt-2 name_input">
                                             <input type="text"
                                                 className={`form-control ${errors.lastName ? "is-invalid" : ""
                                                     }`}

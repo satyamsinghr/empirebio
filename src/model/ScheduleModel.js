@@ -185,7 +185,7 @@ const ScheduleModel = ({ closeModal, type }) => {
                                             )}
                                         </div>
                                         <div
-                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-end mt-lg-0 mt-md-0 mt-2">
+                                            className="col-lg-6 col-md-6 col-sm-12 col-12 flex-column d-flex align-items-start justify-content-start mt-lg-0 mt-md-0 mt-2 name_input">
                                             <input type="text"
                                                 className={`form-control ${errors.lastName ? "is-invalid" : ""
                                                     }`}
