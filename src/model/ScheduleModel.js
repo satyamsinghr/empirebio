@@ -2,6 +2,8 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Header from '../Layout/Header';
+import Footer from '../Layout/Footer';
 
 const Schema = z.object({
     firstName: z
@@ -67,7 +69,10 @@ const ScheduleModel = ({ closeModal, type }) => {
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-body">
-                        <div className="row g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
+                        <div className='d-lg-none modal_header d-md-none d-block'>
+                            <Header />
+                        </div>
+                        <div className="row modal_body g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
@@ -312,6 +317,9 @@ const ScheduleModel = ({ closeModal, type }) => {
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                        <div className='d-lg-none d-md-none d-block'>
+                            <Footer />
                         </div>
                     </div>
                 </div>

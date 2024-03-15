@@ -12,6 +12,9 @@ const Header = () => {
             location.pathname === '/surface-atp' ||
             location.pathname === '/surface-protein' ||
             location.pathname === '/reporting-software' ||
+            location.pathname === '/transport-kit-ATP' ||
+            location.pathname === '/viral-transport-medium' ||
+            location.pathname === '/sterile-nasal-flocked-swab' ||
             location.pathname.startsWith('/product-detail')
         );
     };
@@ -25,7 +28,7 @@ const Header = () => {
     };
     return (
         <div>
-            <header className={`${location.pathname === '/contactUs' || location.pathname === '/aqua-atp' || location.pathname === '/surface-atp' || location.pathname === '/reporting-software' || location.pathname === '/surface-protein' || location.pathname === '/product-detail' ? 'white_header' : ''}`}>
+            <header className={`${location.pathname === '/contactUs' || location.pathname === '/viral-transport-medium' || location.pathname === '/sterile-nasal-flocked-swab' || location.pathname === '/aqua-atp' || location.pathname === '/surface-atp' || location.pathname === '/transport-kit-ATP' || location.pathname === '/reporting-software' || location.pathname === '/surface-protein' || location.pathname === '/product-detail' ? 'white_header' : ''}`}>
                 {/* <header> */}
                 <div className="container">
                     <div className="row">
@@ -68,9 +71,9 @@ const Header = () => {
                                                     stroke-linecap="round" />
                                             </svg>
                                         ) : (
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M13.7999 19.2H2.3999M21.5999 12H2.3999M21.5999 4.79999H2.3999" stroke="#000552" stroke-width="2" stroke-linecap="round" />
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M13.7999 19.2H2.3999M21.5999 12H2.3999M21.5999 4.79999H2.3999" stroke="#000552" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
                                         )}
                                     </span>
                                 </button>

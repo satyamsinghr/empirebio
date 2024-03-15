@@ -2,6 +2,8 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import Header from '../Layout/Header';
+import Footer from '../Layout/Footer';
 
 const Schema = z.object({
     firstName: z
@@ -68,7 +70,10 @@ const RequestModel = ({ closeModal }) => {
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-body">
-                        <div className="row g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
+                        <div className='d-lg-none modal_header d-md-none d-block'>
+                            <Header />
+                        </div>
+                        <div className="row modal_body g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
@@ -152,7 +157,7 @@ const RequestModel = ({ closeModal }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-7 col-lg-7 col-md-7 col-12">
+                            <div className="col-xl-7 col-lg-7 col-md-7 col-12 pt-lg-0 pt-md-0 pt-2">
                                 <div className="section_content">
                                     <h2 className='d-lg-none d-md-none d-block mb-4 pb-2'>Get a quote</h2>
                                 </div>
@@ -312,6 +317,9 @@ const RequestModel = ({ closeModal }) => {
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                        <div className='d-lg-none d-md-none d-block'>
+                            <Footer />
                         </div>
                     </div>
                 </div>

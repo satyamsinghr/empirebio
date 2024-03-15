@@ -46,95 +46,146 @@ const Product = () => {
             </section>
 
             {/* <!--Product section--> */}
-
-            <section class="product_sec">
-                <div class="container">
-                    <div class="row g-lg-4 g-md-3 g-4">
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_1.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead™ Handheld</h3>
-                                    <div
-                                        class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
-                                        <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
-                                            More</Link>
-                                        <a onClick={(e) => openModal(e)}
-                                            class="btn btn-outline-primary">Request
-                                            a quote</a>
+            <div className='product_sec_outer'>
+                <section class="product_sec">
+                    <div class="container">
+                        <div class="row g-lg-4 g-md-3 g-4">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_1.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead™ Handheld</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/product-detail' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_2.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Surface ATP Detection Swabs</h3>
-                                    <div
-                                        class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
-                                        <Link to='/surface-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
-                                            More</Link>
-                                        <a onClick={(e) => openModal(e)}
-                                            class="btn btn-outline-primary">Request
-                                            a quote</a>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_2.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Surface ATP Detection Swabs</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/surface-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_3.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Aqua ATP Detection Swabs</h3>
-                                    <div
-                                        class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
-                                        <Link to='/aqua-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
-                                            More</Link>
-                                        <a onClick={(e) => openModal(e)}
-                                            class="btn btn-outline-primary">Request
-                                            a quote</a>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_3.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Aqua ATP Detection Swabs</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/aqua-atp' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_4.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Surface Protein Detection Swabs</h3>
-                                    <div
-                                        class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
-                                        <Link to='/surface-protein' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
-                                            More</Link>
-                                        <a onClick={(e) => openModal(e)}
-                                            class="btn btn-outline-primary">Request
-                                            a quote</a>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_4.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Surface Protein Detection <br className='d-lg-block d-md-none d-none' />Swabs</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/surface-protein' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product_card">
-                                <img src="images/product_5.png" alt="" />
-                                <div class="product_card_ingo">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
-                                    <div
-                                        class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
-                                        <Link to='/reporting-software' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
-                                            More</Link>
-                                        <a
-                                            onClick={(e) => openModal(e)}
-                                            class="btn btn-outline-primary">Request
-                                            a quote</a>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_5.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/reporting-software' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a
+                                                onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_6.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Viral Transport Medium & Flocked Swab Kit</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/transport-kit-ATP' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a
+                                                onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card">
+                                    <img src="images/product_7.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">COVID-19 Viral Transport <br className='d-lg-block d-md-none d-none' />Medium</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/viral-transport-medium' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a
+                                                onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product_card product_eight">
+                                    <img src="images/product_8.png" alt="" />
+                                    <div class="product_card_ingo">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">Sterile Nasal Flocked Swab</h3>
+                                        <div
+                                            class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
+                                            <Link to='/sterile-nasal-flocked-swab' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn
+                                                More</Link>
+                                            <a
+                                                onClick={(e) => openModal(e)}
+                                                class="btn btn-outline-primary">Request
+                                                a quote</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}

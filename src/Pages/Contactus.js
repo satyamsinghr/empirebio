@@ -65,7 +65,7 @@ const ContactUs = () => {
                             <div class="section_content banner_content h-auto w-100">
                                 <hr className='d-lg-none d-md-none d-block contact_sep' />
                                 <h2 class="mb-lg-5 mb-md-4 mb-4 d-lg-block d-mb-block d-none">Contact us</h2>
-                                <p class="mb-lg-5 mb-md-4 mb-3">280 Duffy Avenue
+                                <p class="mb-lg-5 mb-md-4 mb-3">280 Duffy Avenue<br />
                                     Hicksville, NY 11801</p>
                                 <p class="mb-2">Toll Free: 1 (833) 455-7700</p>
                                 <p class="mb-2">Local: 1 (516) 696-0822</p>

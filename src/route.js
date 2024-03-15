@@ -10,6 +10,9 @@ import SurfaceATP from './Pages/SurfaceATP';
 import SurfaceProtein from './Pages/SurfaceProtein';
 import AquaATP from './Pages/AquaATP';
 import Reporting from './Pages/Reporting';
+import TransportKitATP from './Pages/TransportKitATP';
+import ViralTransportMedium from './Pages/ViralTransportMedium';
+import SterileNasalFlockedSwab from './Pages/SterileNasalFlockedSwab';
 const Routing = () => {
     return (
             <Routes>
@@ -22,6 +25,9 @@ const Routing = () => {
               <Route path="surface-protein" element={<SurfaceProtein />} />
               <Route path="aqua-atp" element={<AquaATP />} />
               <Route path="reporting-software" element={<Reporting />} />
+              <Route path="transport-kit-ATP" element={<TransportKitATP />} />
+              <Route path="viral-transport-medium" element={<ViralTransportMedium />} />
+              <Route path="sterile-nasal-flocked-swab" element={<SterileNasalFlockedSwab />} />
 
             </Routes>
     )
