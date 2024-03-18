@@ -90,9 +90,9 @@ const Footer = () => {
                                     <li class="mt-3">
                                         <Link to="/product" onClick={() => window.scrollTo(0, 0)}>Products</Link>
                                     </li>
-                                    <li class="mt-3">
-                                        <Link >Resource Center</Link>
-                                    </li>
+                                    {/* <li class="mt-3">
+                                        <Link >Resources</Link>
+                                    </li> */}
                                     <li class="mt-3">
                                         <Link to="/contactUs" onClick={() => window.scrollTo(0, 0)}>Contact Us</Link>
                                     </li>

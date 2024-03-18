@@ -118,7 +118,7 @@ const Product = () => {
                                 <div class="product_card">
                                     <img src="images/product_5.png" alt="" />
                                     <div class="product_card_ingo">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead<sup>™</sup> Contamination Reporting Software</h3>
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4 mt-lg-0 mt-md-0 mt-3">CleanRead<sup>™</sup>  Reporting <br className='d-lg-block d-md-none d-none' />Software</h3>
                                         <div
                                             class="product_button d-flex align-items-center gap-lg-3 gap-md-3 gap-2">
                                             <Link to='/reporting-software' class="btn btn-primary" onClick={() => window.scrollTo(0, 0)}>Learn

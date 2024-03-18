@@ -12,7 +12,7 @@ const Home = () => {
                             <div class="section_content banner_content">
                                 <h2
                                     class="mb-lg-4 mb-md-3 mb-3 text-white">Cleanliness
-                                    is absolute,
+                                    is absolute,<br/>
                                     there are no two ways about it. </h2>
                                 <p class="mb-lg-5 mb-md-4 text-white mb-4">We
                                     deliver Cleanliness Verification Solutions to
