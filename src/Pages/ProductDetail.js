@@ -76,11 +76,7 @@ const ProductDetail = () => {
                                 <img src="images/product_detail.png" className='d-lg-block d-md-block d-none' width="199px" alt="" />
                                 <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead<sup>™</sup> Handheld ATP
                                     Testing Device</h2>
-                                <p class="mb-4"><b>Our flagship monitoring system
-                                    uses bioluminescence technology for
-                                    real-time cleanliness assessment. Ideal for
-                                    high-traffic areas and critical
-                                    environments.</b></p>
+                                <p class="mb-4"><b>Our flagship monitoring system uses bioluminescence technology for real-time cleanliness assessment. Ideal for high-traffic areas and critical environments.</b></p>
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
@@ -95,40 +91,30 @@ const ProductDetail = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/offline.png" alt="" />
+                                            <img src="images/offline.svg" alt="" />
                                             <div>
-                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">Offline
-                                                    Functionality</h3>
-                                                <p class="mb-0">Automatically sync data
-                                                    with the CleanRead™ Contamination
-                                                    Reporting web portal when Wi-Fi is
-                                                    accessible.</p>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">Offline Functionality</h3>
+                                                <p class="mb-0">Automatically sync data with the CleanRead™ Contamination Reporting web portal when Wi-Fi is accessible.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/rfid.png" alt="" />
+                                            <img src="images/rfid.svg" alt="" />
                                             <div>
-                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">RFID & Barcode
-                                                    Capability</h3>
-                                                <p class="mb-0">Scan RFID tags and
-                                                    barcodes on equipment to associate
-                                                    them with test points for easy
-                                                    initiation of tests.</p>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">RFID & Barcode Capability</h3>
+                                                <p class="mb-0">Scan RFID tags and barcodes on equipment to associate them with test points for easy initiation of tests.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/al-based.png" alt="" />
+                                            <img src="images/al-based.svg" alt="" />
                                             <div>
-                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">AI based Test
-                                                    Scheduling</h3>
-                                                <p class="mb-0">Set up daily testing
-                                                    schedules through the dashboard.</p>
+                                                <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">AI based Test Scheduling</h3>
+                                                <p class="mb-0">Set up daily testing schedules through the dashboard.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -208,12 +194,7 @@ const ProductDetail = () => {
                             <div
                                 class="section_content detail_product_card">
                                 <h3 class="mb-3"><b> Product details</b></h3>
-                                <p class="mb-0">The CleanRead™ Handheld ATP Testing
-                                    Device is
-                                    designed for healthcare facilities demanding
-                                    quick, easy-to-use, and reliable solutions for
-                                    assessing cleaning protocols and verifying
-                                    efficacy within 15 seconds.</p>
+                                <p class="mb-0">The CleanRead™ Handheld ATP Testing Device is designed for healthcare facilities demanding quick, easy-to-use, and reliable solutions for assessing cleaning protocols and verifying efficacy within 15 seconds.</p>
                                 {/* <button class="btn btn-outline-primary">Download
                                     user manual</button> */}
                             </div>
@@ -226,34 +207,31 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/plan.png" alt="" />
+                                    <img src="images/plan.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Today’s Plan</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">Let’s you view test points scheduled to be tested today.</p>
                                 </div>
                             </div>
                             <div
                                 class="d-flex align-items-lg-center my-lg-5 my-md-4 my-4 align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/quick_test.png" alt="" />
+                                    <img src="images/quick_test.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Quick Test</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">Evaluate the cleanliness of a surface quickly, without the need of registering the test point.</p>
                                 </div>
                             </div>
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/report.png" alt="" />
+                                    <img src="images/report.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Report</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">Access ATP testing reports on the Handheld device.</p>
                                 </div>
                             </div>
                         </div>
@@ -267,34 +245,31 @@ const ProductDetail = () => {
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/test_point.png" alt="" />
+                                    <img src="images/test_point.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Test Points</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">A visual library of instruments, surfaces that are tagged with critical touch points suitable for ATP testing.</p>
                                 </div>
                             </div>
                             <div
                                 class="d-flex align-items-lg-center my-lg-5 my-md-4 my-4 align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/syncro.png" alt="" />
+                                    <img src="images/syncro.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Synchronize</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">Sync test results from the handheld to the cloud after the device has been used in offline mode.</p>
                                 </div>
                             </div>
                             <div
                                 class="d-flex align-items-lg-center align-items-md-center gap-4 flex-lg-row flex-md-row flex-column">
                                 <div>
-                                    <img src="images/scan.png" alt="" />
+                                    <img src="images/scan.svg" alt="" />
                                 </div>
                                 <div class="page_card">
                                     <h3 class="mb-2 mt-3">Scan Barcode</h3>
-                                    <p class="mb-0">Worem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.</p>
+                                    <p class="mb-0">Test points associated with an instrument can be linked to a barcode for quick access and ATP testing.</p>
                                 </div>
                             </div>
                         </div>

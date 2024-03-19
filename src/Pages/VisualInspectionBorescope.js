@@ -98,7 +98,8 @@ const TransportKitATP = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/ai-power.png" alt="" />
+                                            <img src="images/ai-power.svg" alt="" />
+                                            
                                             <div>
                                                 <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">AI powered inspection</h3>
                                                 <p class="mb-0">AI auto detects the abnormalities inside the endoscope channel.</p>
@@ -108,7 +109,7 @@ const TransportKitATP = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/hd-ready.png" alt="" />
+                                            <img src="images/hd-ready.svg" alt="" />
                                             <div>
                                                 <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">HD Ready</h3>
                                                 <p class="mb-0">High resolution images and live video feeds.</p>
@@ -118,7 +119,7 @@ const TransportKitATP = () => {
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <div class="page_card">
-                                            <img src="images/on-board.png" alt="" />
+                                            <img src="images/on-board.svg" alt="" />
                                             <div>
                                                 <h3 class="mb-2 mt-lg-3 mt-md-3 mt-0">Onboard storage</h3>
                                                 <p class="mb-0">Ability to store, archive and share images and videos.</p>
