@@ -92,12 +92,12 @@ const Header = () => {
                                             <a className="nav-link px-0"
                                                 href="#" >About Us</a>
                                         </li> */}
-                                        {/* <li className="nav-item">
-                                            <a className="nav-link px-0"
+                                        <li className="nav-item">
+                                            <Link to="/resource" className={`nav-link ${location.pathname === '/resource' ? 'active' : ''} px-0 `}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
                                                 onClick={closeDropdown}
-                                            >Resources</a>
-                                        </li> */}
+                                            >Resources</Link>
+                                        </li>
                                         <li className="nav-item">
                                             <Link to="/contactUs" className={`nav-link ${location.pathname === '/contactUs' ? 'active' : ''} px-0 `}
                                                 style={{ color: location.pathname === '/product' || location.pathname === '/' ? 'white' : '' }}
