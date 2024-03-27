@@ -13,7 +13,7 @@ const SurfaceATP = () => {
         navigate(-1);
     };
 
-    const openModal = (event,productType) => {
+    const openModal = (event, productType) => {
         event.preventDefault();
         setSelectedProductType(productType);
         setModalIsOpen(true);
@@ -26,7 +26,7 @@ const SurfaceATP = () => {
     const handleDownload = () => {
         const pdfPath = 'pdf/Surface_ATP_Detection_Swab_rev.pdf';
         saveAs(pdfPath, 'Surface_ATP_Detection_Swab_rev.pdf');
-      };
+    };
     return (
         <div>
             <section class="siteBanner product_detail_banner">
@@ -91,10 +91,10 @@ const SurfaceATP = () => {
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e,'surfaceAtp')}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e, 'surfaceAtp')}>Request
                                         a quote</button>
                                     <button
-                                        class="btn btn-outline-primary py-3 px-4"  onClick={handleDownload}>Download
+                                        class="btn btn-outline-primary py-3 px-4" onClick={handleDownload}>Download
                                         brochure</button>
                                 </div>
 
@@ -104,7 +104,7 @@ const SurfaceATP = () => {
                                     <ul class="surface_list">
                                         <li class="mb-2">All-in-one sampling device.</li>
                                         <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li>
-                                        <li class="mb-2">4 week shelf life at room temperatures (70°F) (21°C).</li>
+                                        <li class="mb-2">4 week shelf life at room temperatures (68°F) (20°C).</li>
                                         <li class="mb-2">Unique liquid-stable reagent.</li>
                                     </ul>
                                 </div>
@@ -130,50 +130,50 @@ const SurfaceATP = () => {
                         </div>
 
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                  <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_1.png" alt="" />
-                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">CleanRead™ Handheld</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                            <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_1.png" alt="" />
+                                    <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">CleanRead™ Handheld</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                  </Link>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                 <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_3.png" alt="" />
-                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_3.png" alt="" />
+                                    <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                  </Link>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-              <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_4.png" alt="" />
-                                <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Surface Protein Detection
-                                        Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/surface-protein' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_4.png" alt="" />
+                                    <div class="product_card_ingo mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Surface Protein Detection
+                                            Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                  </Link>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@ const SurfaceATP = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal}  type={selectedProductType}/>
+                <RequestModel closeModal={closeModal} type={selectedProductType} />
             </Modal>
         </div>
     )

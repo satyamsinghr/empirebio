@@ -12,7 +12,7 @@ const SurfaceProtein = () => {
         navigate(-1);
     };
 
-    const openModal = (event,productType) => {
+    const openModal = (event, productType) => {
         event.preventDefault();
         setSelectedProductType(productType);
         setModalIsOpen(true);
@@ -24,7 +24,7 @@ const SurfaceProtein = () => {
     const handleDownload = () => {
         const pdfPath = 'pdf/Surface_ATP_Detection_Swab_rev.pdf';
         saveAs(pdfPath, 'Surface_ATP_Detection_Swab_rev.pdf');
-      };
+    };
     return (
         <div>
             <section class="siteBanner product_detail_banner">
@@ -74,21 +74,12 @@ const SurfaceProtein = () => {
                                 <img src="images/surface_icon.png" className='d-lg-block d-md-block d-none' alt="" />
                                 <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead™ Surface Protein Detection
                                     Swabs</h2>
-                                <p class="mb-4"><b>Verify cleanliness and measure
-                                    microbial contamination on any scope,
-                                    cannulated instrument or surface in 15
-                                    seconds!</b></p>
-                                <p class="mb-4">CleanRead™ Surface Protein Detection Swab provides a
-                                    rapid, simple and reliable way to verify
-                                    cleanliness and measure microbial contamination
-                                    on the surface of surgical instruments, scopes,
-                                    washer-disinfectors, exam rooms, operating
-                                    rooms, restrooms, waiting rooms – anywhere that
-                                    can harbor possible contaminants.</p>
+                                <p class="mb-4"><b>Measure protein contamination on any scope, cannulated instrument or surface in 10 minutes!</b></p>
+                                <p class="mb-4">CleanRead™ Surface Protein Detection Swab provides a rapid, simple and quantitative way to measure protein contamination on the surface of surgical instruments, scopes, washer-disinfectors, exam rooms, operating rooms, restrooms, waiting rooms – anywhere that can harbor protein contaminants.</p>
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
-                                        class="btn btn-primary outline-dark py-3 px-4"onClick={(e) => openModal(e,'surfaceProtein')}>Request
+                                        class="btn btn-primary outline-dark py-3 px-4" onClick={(e) => openModal(e, 'surfaceProtein')}>Request
                                         a quote</button>
                                     <button
                                         class="btn btn-outline-primary py-3 px-4" onClick={handleDownload}>Download
@@ -100,8 +91,8 @@ const SurfaceProtein = () => {
                                     <h3 class="mb-lg-4 mb-md-4 mb-3"><b>Features</b></h3>
                                     <ul class="surface_list">
                                         <li class="mb-2">All-in-one sampling device.</li>
-                                        <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li>
-                                        <li class="mb-2">4 week shelf life at room temperatures (70°F) (21°C).</li>
+                                        {/* <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li> */}
+                                        {/* <li class="mb-2">4 week shelf life at room temperatures (70°F) (21°C).</li> */}
                                         <li class="mb-2">Unique liquid-stable reagent.</li>
                                     </ul>
                                 </div>
@@ -127,49 +118,49 @@ const SurfaceProtein = () => {
                         </div>
 
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_1.png" alt="" />
-                                <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">CleanRead™ Handheld</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                            <Link to='/product-detail' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_1.png" alt="" />
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">CleanRead™ Handheld</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Enhance Your Cleanliness Checks with Immediate, Precise Feedback.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_2.png" alt="" />
-                                <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Surface ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/surface-atp' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_2.png" alt="" />
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Surface ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
-                            <div class="product_card">
-                                <img src="images/product_3.png" alt="" />
-                                <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
-                                    <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
-                                    <div class="section_content">
-                                        <p class="mb-0">Precision swabs for
-                                            comprehensive surface testing,
-                                            compatible with our monitoring
-                                            systems.</p>
+                            <Link to='/aqua-atp' onClick={() => window.scrollTo(0, 0)}>
+                                <div class="product_card">
+                                    <img src="images/product_3.png" alt="" />
+                                    <div class="product_card_ingo  mt-lg-0 mt-md-0 mt-3">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-4">Aqua ATP Detection Swabs</h3>
+                                        <div class="section_content">
+                                            <p class="mb-0">Precision swabs for
+                                                comprehensive surface testing,
+                                                compatible with our monitoring
+                                                systems.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -179,7 +170,7 @@ const SurfaceProtein = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} type={selectedProductType}/>
+                <RequestModel closeModal={closeModal} type={selectedProductType} />
             </Modal>
         </div>
     )

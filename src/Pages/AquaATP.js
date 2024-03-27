@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 import RequestModel from '../model/RequestModel';
@@ -13,8 +13,8 @@ const AquaATP = () => {
     };
 
     const [selectedProductType, setSelectedProductType] = useState(null);
-    
-    const openModal = (event,productType) => {
+
+    const openModal = (event, productType) => {
         event.preventDefault();
         setSelectedProductType(productType);
         setModalIsOpen(true);
@@ -26,7 +26,7 @@ const AquaATP = () => {
     const handleDownload = () => {
         const pdfPath = 'pdf/Aqua_ATP_Detection Swab.pdf';
         saveAs(pdfPath, 'Aqua_ATP_Detection Swab.pdf');
-      };
+    };
 
     return (
         <div>
@@ -78,19 +78,7 @@ const AquaATP = () => {
                                 <h2 class="mt-lg-4 mt-md-4 mt-0 mb-lg-4 mb-md-4 mb-3">CleanRead™ Aqua ATP Detection Swabs</h2>
                                 <p class="mb-4"><b>Monitors ATP Levels in water as a quality
                                     cleanliness indicator with results in only 15 seconds!</b></p>
-                                <p class="mb-4">CleanRead™ Aqua ATP Detection Swabs are self-contained
-                                    ATP tests for use with CleanRead™ Handheld luminometers.
-                                    Tests are used to monitor ATP levels in water as a
-                                    quality cleanliness indicator. The specially formulated
-                                    CleanRead™ Swab is a validated method for testing water
-                                    quality throughout the healthcare environment.
-                                    It is especially valuable in monitoring the
-                                    cleanliness of endoscopes and cannulated medical devices
-                                    . CleanRead™ Aqua ATP Detection Swabs measure both ATP
-                                    contained within living cells and particulate matter
-                                    (microbial ATP) as well as ATP dissolved in water (
-                                    non-microbial or dead microbial ATP organisms,
-                                    also referred to as biomass).</p>
+                                <p class="mb-4">CleanRead™ Aqua ATP Detection Swabs are self-contained ATP tests for use with CleanRead™ Handheld luminometers. Tests are used to monitor ATP levels in water as a quality cleanliness indicator. The specially formulated CleanRead™ Swab is a validated method for testing water quality throughout the healthcare environment. It is especially valuable in monitoring the cleanliness of endoscopes and cannulated medical devices. CleanRead™ Aqua ATP Detection Swabs measure both ATP contained within living cells and particulate matter (microbial ATP) as well as ATP dissolved in water (non-microbial or dead microbial ATP organisms, also referred to as biomass).</p>
                                 <div
                                     class="d-flex flex-lg-row gap-lg-4 gap-md-3 gap-2 flex-md-row flex-column">
                                     <button
@@ -107,7 +95,7 @@ const AquaATP = () => {
                                     <ul class="surface_list">
                                         <li class="mb-2">All-in-one sampling device.</li>
                                         <li class="mb-2">15-month shelf life (from date of mfg.) at refrigerated temperatures (36°F to 46°F) (2°C to 8°C).</li>
-                                        <li class="mb-2">4 week shelf life at room temperatures (70°F) (21°C).</li>
+                                        <li class="mb-2">4 week shelf life at room temperatures (68°F) (20°C).</li>
                                         <li class="mb-2">Unique liquid-stable reagent.</li>
                                     </ul>
                                 </div>
@@ -187,7 +175,7 @@ const AquaATP = () => {
                 onRequestClose={closeModal}
                 class="modal custom_modal"
             >
-                <RequestModel closeModal={closeModal} type={selectedProductType}/>
+                <RequestModel closeModal={closeModal} type={selectedProductType} />
             </Modal>
         </div>
     )
