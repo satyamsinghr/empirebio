@@ -121,7 +121,7 @@ const Footer = () => {
                                 <h3>Privacy policy & Terms of use</h3>
                                 <ul>
                                     <li>
-                                        <a href="#">Copyright 2024 | All Rights
+                                        <a>Copyright 2024 | All Rights
                                             Reserved</a>
                                     </li>
                                 </ul>
