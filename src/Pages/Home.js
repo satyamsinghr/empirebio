@@ -1,10 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom';
+import Modal from 'react-modal';
+import WebinarDetailsModel from '../model/WebinarDetailsModel';
 const Home = () => {
-    return (
-        <div>
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
+    const openModal = (event) => {
+        event.preventDefault();
+        setModalIsOpen(true);
+    };
+    const closeModal = () => {
+        setModalIsOpen(false);
+    };
+
+    return (
+        <div class="siteBanner home_bg">
             <section class="siteBanner home_bg">
+                <div class='link top-[100px]'>
+                <Link onClick={openModal} >Join us for our free webinar on Essential Strategies for Infection Control, on June 10 2024 at 02:00 PM EST. Click to register</Link>
+                </div>
                 <div class="container position-relative" style={{ zIndex: "9" }}>
                     <div class="row g-4">
                         <div
@@ -12,7 +26,7 @@ const Home = () => {
                             <div class="section_content banner_content">
                                 <h2
                                     class="mb-lg-4 mb-md-3 mb-3 text-white">Cleanliness
-                                    is absolute,<br/>
+                                    is absolute,<br />
                                     there are no two ways about it. </h2>
                                 <p class="mb-lg-5 mb-md-4 text-white mb-4">We
                                     deliver Cleanliness Verification Solutions to
@@ -402,9 +416,15 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                class="modal custom_modal"
+            >
+                <WebinarDetailsModel closeModal={closeModal} />
+            </Modal>
 
-
-        </div>
+        </div >
     )
 }
 
