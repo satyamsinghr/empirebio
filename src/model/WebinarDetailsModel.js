@@ -78,7 +78,7 @@ const WebinarDetailsModel = ({ closeModal }) => {
                             <div
                                 className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                 <div className="section_content">
-                                    <hr className='d-lg-none d-md-none d-block contact_sep my-2' />
+                                    <hr className='d-lg-none d-md-none d-block contact_sep my-2 mb-4' />
                                     <button className="btn btn-outline-primary webinar_btn">
                                         <span className='span_webinar'>LIVE WEBINAR</span></button>
 
