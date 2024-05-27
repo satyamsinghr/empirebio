@@ -31,7 +31,7 @@ const Schema = z.object({
         .min(1, { message: "Email is required" })
         .email("Invalid Email address"),
     organisation: z.string().min(1, { message: "Organization  is required" }),
-    destination: z.string().min(1, { message: "Designation  is required" }),
+    designation: z.string().min(1, { message: "Designation  is required" }),
 
 })
 
@@ -51,7 +51,7 @@ const WebinarDetailsModel = ({ closeModal }) => {
     const onSubmit = async (values) => {
         setLoad(true)
         try {
-            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/quote', {
+            const response = await fetch('https://ay7hxe7tw6.execute-api.us-east-1.amazonaws.com/prod/api/webinarDetails', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                 <div className="section_content">
                                     <hr className='d-lg-none d-md-none d-block contact_sep my-2' />
                                     <button className="btn btn-outline-primary webinar_btn">
-                                        <span className='span_webinar'>Live Webinar</span></button>
+                                        <span className='span_webinar'>LIVE WEBINAR</span></button>
 
                                     <h3 className='d-lg-block d-md-block d-none'>
                                         <b><span className='text_div'>Essential Strategies for Infection Control in
@@ -127,7 +127,8 @@ const WebinarDetailsModel = ({ closeModal }) => {
                             </div>
                             <div className="col-xl-7 col-lg-7 col-md-7 col-12 pt-lg-0 pt-md-0 pt-2">
                                 <div className="section_content">
-                                    <h2 className='d-lg-none d-md-none d-block mb-4 pb-2'>Get a quote</h2>
+                                    <h2 className='d-lg-none d-md-none d-block mb-4 pb-2'>Essential Strategies for Infection Control in
+                                        Nursing Homes and Long-Term Care Facilities</h2>
                                 </div>
                                 <form className="form_field" onSubmit={handleSubmit(onSubmit)}>
                                     <div className="row">
@@ -219,17 +220,17 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                                 className="form-label mb-1">Designation
                                                 <span style={{ color: "#FF0000" }}>*</span></label>
                                             <input type="text"
-                                                className={`form-control ${errors.destination ? "is-invalid" : ""
+                                                className={`form-control ${errors.designation ? "is-invalid" : ""
                                                     }`}
-                                                id="destination"
+                                                id="designation"
                                                 placeholder
-                                                {...register("destination", {
-                                                    onBlur: () => trigger("destination"),
-                                                    onChange: () => trigger("destination"),
+                                                {...register("designation", {
+                                                    onBlur: () => trigger("designation"),
+                                                    onChange: () => trigger("designation"),
                                                 })} />
-                                            {errors.destination && (
+                                            {errors.designation && (
                                                 <div className="invalid-feedback">
-                                                    {errors.destination.message}
+                                                    {errors.designation.message}
                                                 </div>
                                             )}
                                         </div>

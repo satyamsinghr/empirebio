@@ -16,8 +16,8 @@ const Home = () => {
     return (
         <div class="siteBanner">
             <section class="siteBanner home_bg">
-                <div class='link'>
-                <Link onClick={openModal} >Join us for our free webinar on Essential Strategies for Infection Control, on June 10 2024 at 02:00 PM EST. Click to register</Link>
+                <div class="link" style={{ zIndex: "11" }}>
+                <div class='link-p' onClick={openModal} >Join us for our free webinar on Essential Strategies for Infection Control, on June 10 2024 at 02:00 PM EST. Click to register</div>
                 </div>
                 <div class="container position-relative" style={{ zIndex: "9" }}>
                     <div class="row g-4">
