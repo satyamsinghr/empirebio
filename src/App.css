@@ -1061,6 +1061,13 @@ span.span_webinar {
     font-weight: 300 !important;
 }
 
+.webinar_update.modal_webinary p {
+    border-radius: 24px;
+    border: 1px solid #1E1E1E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #1E1E1E;
+}
+
 .navbar-toggler-icon {
     background-image: none;
     display: flex;

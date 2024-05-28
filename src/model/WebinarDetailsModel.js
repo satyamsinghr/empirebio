@@ -79,10 +79,13 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                 className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="section_content detail_product_card">
                                     <hr className='d-lg-none d-md-none d-block contact_sep my-2 mb-4' />
-                                    <button className="btn btn-outline-primary webinar_btn mb-4">
-                                        <span className='span_webinar'>LIVE WEBINAR</span></button>
+                                    {/* <button className="btn btn-outline-primary webinar_btn mb-4">
+                                        <span className='span_webinar'>LIVE WEBINAR</span></button> */}
+                                    <div className='d-flex webinar_update flex-wrap modal_webinary align-items-center gap-3 mb-4'>
+                                        <p className=' px-4 py-2 mb-0'><b>LIVE WEBINAR</b></p>
+                                    </div>
                                     <h3 className='d-lg-block d-md-block d-none m-0'>
-                                        <b><span className='text_div'>Essential Strategies for<br/> Infection Control in
+                                        <b><span className='text_div'>Essential Strategies for<br /> Infection Control in
                                             Nursing Homes and Long-Term Care Facilities.</span></b></h3>
                                     <div className="mt-lg-4 mt-md-4 mt-0 pt-lg-0 pt-md-0 pt-3">
                                         <div>
