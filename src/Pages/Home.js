@@ -58,12 +58,12 @@ const Home = () => {
                             <div className='webinar_strategies h-100 d-flex align-items-center'>
                                 <div class="section_content">
                                     <div className='d-flex webinar_update flex-wrap align-items-center gap-3 mb-4'>
-                                        <p className='px-4 py-2 mb-0 grenn_webinary'><b>LIVE WEBINAR</b></p>
+                                        {/* <p className='px-4 py-2 mb-0 grenn_webinary'><b>LIVE WEBINAR</b></p> */}
                                         <p className='text-white px-4 py-2 mb-0'><b>Monday, June 10 2024 | 02:00 PM EST</b></p>
                                     </div>
                                     <h2 class="mb-lg-4 mb-md-3 mb-3 text-white">Essential Strategies for Infection Control in<br className='d-xl-block d-lg-block d-none' /> Nursing Homes and Long - Term Care Facilities.</h2>
                                     <p className='text-white'>Join us for this informative and engaging webinar designed for healthcare professionals, caregivers, and administrators who are dedicated to ensuring the health and safety of residents in nursing homes and long-term care facilities.</p>
-                                    <div className='my-lg-4 my-md-3 my-3'>
+                                    {/* <div className='my-lg-4 my-md-3 my-3'>
                                         <p className=' text-white'><b>Speakers</b></p>
                                         <div className='mt-3 d-flex align-items-center justify-content-between gap-xl-5 gap-lg-4 gap-4 flex-xl-nowrap flex-lg-nowrap flex-md-wrap flex-wrap'>
                                             <div className='d-flex align-items-center gap-3'>
@@ -85,7 +85,7 @@ const Home = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div>
                                         <button className='btn btn-primary py-3 px-4 bgGreen' onClick={openModal}>Register now</button>
                                     </div>

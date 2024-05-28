@@ -81,9 +81,9 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                     <hr className='d-lg-none d-md-none d-block contact_sep my-2 mb-4' />
                                     {/* <button className="btn btn-outline-primary webinar_btn mb-4">
                                         <span className='span_webinar'>LIVE WEBINAR</span></button> */}
-                                    <div className='d-flex webinar_update flex-wrap modal_webinary align-items-center gap-3 mb-4'>
+                                    {/* <div className='d-flex webinar_update flex-wrap modal_webinary align-items-center gap-3 mb-4'>
                                         <p className=' px-4 py-2 mb-0'><b>LIVE WEBINAR</b></p>
-                                    </div>
+                                    </div> */}
                                     <h3 className='d-lg-block d-md-block d-none m-0'>
                                         <b><span className='text_div'>Essential Strategies for<br /> Infection Control in
                                             Nursing Homes and Long-Term Care Facilities.</span></b></h3>
