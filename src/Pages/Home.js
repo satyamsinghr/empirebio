@@ -87,7 +87,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <button className='btn btn-primary py-3 px-4 bgGreen'>Register now</button>
+                                        <button className='btn btn-primary py-3 px-4 bgGreen' onClick={openModal}>Register now</button>
                                     </div>
                                 </div>
                             </div>
