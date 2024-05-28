@@ -67,7 +67,7 @@ const WebinarDetailsModel = ({ closeModal }) => {
     };
     return (
         <div
-            className="modal custom_modal d-flex show fade align-items-start justify-content-center">
+            className="modal custom_modal d-flex show fade align-items-lg-center align-items-md-center px-lg-0 px-md-3 px-0 align-items-start justify-content-center">
             <div className="modal-dialog_Webinar">
                 <div className="modal-content">
                     <div className="modal-body">
@@ -76,16 +76,15 @@ const WebinarDetailsModel = ({ closeModal }) => {
                         </div>
                         <div className="row modal_body g-xl-5 g-lg-4 g-md-5 g-4 flex-lg-row flex-md-row flex-column-reverse">
                             <div
-                                className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                                <div className="section_content">
+                                className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div className="section_content detail_product_card">
                                     <hr className='d-lg-none d-md-none d-block contact_sep my-2 mb-4' />
-                                    <button className="btn btn-outline-primary webinar_btn">
+                                    <button className="btn btn-outline-primary webinar_btn mb-4">
                                         <span className='span_webinar'>LIVE WEBINAR</span></button>
-
-                                    <h3 className='d-lg-block d-md-block d-none'>
-                                        <b><span className='text_div'>Essential Strategies for Infection Control in
-                                        Nursing Homes and Long-Term Care Facilities.</span></b></h3>
-                                    <div className="mt-lg-5 mt-md-4 mt-0 pt-lg-0 pt-md-0 pt-4">
+                                    <h3 className='d-lg-block d-md-block d-none m-0'>
+                                        <b><span className='text_div'>Essential Strategies for<br/> Infection Control in
+                                            Nursing Homes and Long-Term Care Facilities.</span></b></h3>
+                                    <div className="mt-lg-4 mt-md-4 mt-0 pt-lg-0 pt-md-0 pt-3">
                                         <div>
                                             <p
                                                 className="d-flex align-items-center gap-2">
@@ -95,11 +94,11 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                                 {/* <b>Monday,June 10 2024</b> */}
                                             </p>
                                             <div className="mt-3">
-                                                <p className="mb-1">Monday,June 10 2024</p>
+                                                <h3 className="mb-1 font-300">Monday,June 10 2024</h3>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mt-lg-5 mt-md-4 mt-4">
+                                    <div className="mt-lg-4 mt-md-4 mt-4">
                                         <div>
                                             <p
                                                 className="d-flex align-items-center gap-2">
@@ -115,8 +114,8 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                                 {/* <b>Operational hours</b> */}
                                             </p>
                                             <div className="mt-3">
-                                                <p
-                                                    className="mb-2">02:00PM EST</p>
+                                                <h3
+                                                    className="font-300">02:00PM EST</h3>
                                                 {/* <p
                                             className="mb-0">Monday to
                                             Friday</p> */}
@@ -125,7 +124,7 @@ const WebinarDetailsModel = ({ closeModal }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-7 col-lg-7 col-md-7 col-12 pt-lg-0 pt-md-0 pt-2">
+                            <div className="col-xl-6 col-lg-6 col-md-6 col-12 pt-lg-0 pt-md-0 pt-2">
                                 <div className="section_content">
                                     <h2 className='d-lg-none d-md-none d-block mb-4 pb-2'>Essential Strategies for Infection Control in
                                         Nursing Homes and Long-Term Care Facilities</h2>

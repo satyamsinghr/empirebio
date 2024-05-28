@@ -54,7 +54,7 @@ const Header = () => {
                                         </>
                                     )}
                                 </Link>
-                                <button className="navbar-toggler" type="button"
+                                <button className="navbar-toggler p-0 border-0 outline-none" type="button"
                                     onClick={toggleDropdown}
                                     // data-bs-toggle="collapse"
                                     // data-bs-target="#navbarSupportedContent"

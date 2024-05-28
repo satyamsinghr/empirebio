@@ -237,6 +237,41 @@ section.new_testing:after {
     color: #fff !important;
 }
 
+/*=== live vebinar ===*/
+.live_webinar {
+    position: relative;
+    background-image: url(../public/images/webinar-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    min-height: 105vh;
+    background-attachment: scroll;
+}
+
+.webinar_update p {
+    border: 1px solid #fff;
+    border-radius: 24px;
+}
+
+.grenn_webinary {
+    color: #95E06C !important;
+    border: 1px solid #95E06C !important;
+}
+
+button.btn.btn-primary.bgGreen {
+    border: none;
+    min-width: 180px;
+    background-color: #95E06C;
+    color: #1E1E1E;
+}
+
+.webinar_strategies {
+    background: rgba(30, 30, 30, 0.70);
+    backdrop-filter: blur(2px);
+    min-height: 105vh;
+    padding: 80px 48px 80px 96px;
+}
+
 /*==== curial role =====*/
 section.testing_bg {
     position: relative;
@@ -568,7 +603,8 @@ section.siteBanner.inner_banner {
     display: flex !important;
 }
 
-.custom_modal .modal-dialog,.custom_modal .modal-dialog_Webinar {
+.custom_modal .modal-dialog,
+.custom_modal .modal-dialog_Webinar {
     border-radius: 40px;
     background: #fff;
     box-shadow: 0px 48px 64px 0px rgba(51, 51, 51, 0.50);
@@ -577,6 +613,7 @@ section.siteBanner.inner_banner {
     max-width: 782px;
     padding: 40px;
 }
+
 .custom_modal .modal-dialog_Webinar {
     border-radius: 40px;
     background: #fff;
@@ -602,6 +639,7 @@ section.siteBanner.inner_banner {
     outline: none;
     border-radius: 0;
 }
+
 .custom_modal .modal-dialog_Webinar .modal-content {
     border: none;
     padding: 0;
@@ -963,6 +1001,73 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
     border-radius: 10px;
 }
 
+
+.webinar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+    padding: 8px 24px !important;
+    justify-content: center;
+    align-items: flex-start;
+    height: 36px !important;
+    border-radius: 24px !important;
+    margin-bottom: 16px;
+    border: 1px solid var(--Dark-Grey, #1E1E1E) !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+span.span_webinar {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* 
+.text_div {
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+} */
+
+.link {
+    background-color: #027bce;
+    cursor: pointer;
+    min-height: 50px;
+    position: absolute;
+    top: 97px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-p {
+    color: #FFF;
+    padding: 13px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.font-300 {
+    font-weight: 300 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
@@ -1011,6 +1116,10 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 @media (max-width:1280px) {
     .siteBanner.inner_dark_banner {
         border-radius: 0px 0px 200px 0px;
+    }
+
+    .webinar_strategies {
+        padding: 40px 40px 40px 40px;
     }
 }
 
@@ -1137,6 +1246,19 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
         font-weight: 700;
     }
 
+    .webinar_strategies {
+        padding: 24px;
+    }
+
+    .link {
+        top: 82px;
+    }
+
+    .link-p {
+        padding: 10px;
+        font-size: 12px;
+    }
+
     .product_card h3 {
         font-size: 18px;
     }
@@ -1206,7 +1328,8 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
         padding: 40px 0;
     }
 
-    .custom_modal .modal-dialog,.custom_modal .modal-dialog_Webinar {
+    .custom_modal .modal-dialog,
+    .custom_modal .modal-dialog_Webinar {
         padding: 0px;
         box-shadow: none;
         margin: 0;
@@ -1258,6 +1381,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
 }
 
 
+
 /*=== new mobile view ====*/
 @media (max-width:767px) {
     section.siteBanner.home_bg {
@@ -1265,7 +1389,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
         min-height: 82vh;
         background-size: cover;
         align-items: center;
-        background-position: -320px 0px;
+        background-position: -285px 0px;
     }
 
     .btn.btn-outline-primary,
@@ -1366,6 +1490,7 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
         font-weight: 700;
         line-height: 20px;
     }
+
 
     button.navbar-toggler {
         border: none;
@@ -1526,47 +1651,9 @@ input[type="search" i]:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-s
     } */
 }
 
-.webinar_btn{
-    display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-display: flex;
-padding: 8px 24px !important;
-justify-content: center;
-align-items: flex-start;
-height: 36px !important;
-border-radius: 24px !important;
-margin-bottom: 16px;
-border: 1px solid var(--Dark-Grey, #1E1E1E) !important;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
-}
-span.span_webinar {
-    font-size: 13px;
-}
-.text_div{
-    font-size: 24px !important;
-}
 
-.link {
-    background-color: #027bce;
-    cursor: pointer;
-    min-height: 50px;
-    position: absolute;
-    top: 116px;
-    width: 100%;
-    left: 0;
-}
-
-.link-p {
-    color: #FFF;
-    padding: 13px;
-    text-align: center;
-    font-family: "neue-haas-grotesk-text" !important;
-    /* font-family: "Neue Haas Grotesk Text Pro" !important; */
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration-line: underline;
+@media (max-width:350px) {
+    section.siteBanner.home_bg {
+        padding: 147px 12px 60px;
+    }
 }
