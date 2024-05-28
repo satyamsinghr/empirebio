@@ -1252,7 +1252,11 @@ span.span_webinar {
         line-height: 32px;
         font-weight: 700;
     }
-
+    
+    .webinar_update.modal_webinary p {
+        width: 100%;
+        text-align: center;
+    }
     .webinar_strategies {
         padding: 24px;
     }
