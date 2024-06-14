@@ -31,6 +31,13 @@ const Resorce = () => {
       url: 'pdf/Handheld_IFU_rev.pdf',
       name: 'Handheld_IFU_rev'
     },
+    {
+      title: 'Webinar_JUNE_10_2024_v2_revised',
+      category: 'Instructions',
+      language: 'English',
+      url: 'pdf/Webinar_JUNE_10_2024_v2_revised.pptx',
+      name: 'Webinar_JUNE_10_2024'
+    },
   ];
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -49,7 +56,9 @@ const Resorce = () => {
   };
 
   const downloadPdf = (url, name) => {
-    saveAs(url, `${name}.pdf`);
+    // saveAs(url, `${name}.pdf`);
+    const extension = url.split('.').pop();
+    saveAs(url, `${name}.${extension}`);
   }
 
   return (

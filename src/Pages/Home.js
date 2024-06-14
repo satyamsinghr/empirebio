@@ -16,9 +16,9 @@ const Home = () => {
     return (
         <div class="siteBanner">
             <section class="siteBanner home_bg">
-                <div class="link" style={{ zIndex: "11" }}>
+                {/* <div class="link" style={{ zIndex: "11" }}>
                     <div class='link-p' onClick={openModal} >Join us for our free webinar on Essential Strategies for Infection Control, on June 10 2024 at 02:00 PM EST. Click to register</div>
-                </div>
+                </div> */}
                 <div class="container position-relative" style={{ zIndex: "9" }}>
                     <div class="row g-4">
                         <div
@@ -51,41 +51,19 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='live_webinar'>
+            {/* <section className='live_webinar'>
                 <div className='container-fluid p-0 h-100'>
                     <div className='row m-0 h-100'>
                         <div className='col-xl-6 col-lg-7 col-md-10 col-sm-12 col-12 px-0 h-100 pe-lg-3'>
                             <div className='webinar_strategies h-100 d-flex align-items-center'>
                                 <div class="section_content">
                                     <div className='d-flex webinar_update flex-wrap align-items-center gap-3 mb-4'>
-                                        {/* <p className='px-4 py-2 mb-0 grenn_webinary'><b>LIVE WEBINAR</b></p> */}
+                                        <p className='px-4 py-2 mb-0 grenn_webinary'><b>LIVE WEBINAR</b></p>
                                         <p className='text-white px-4 py-2 mb-0'><b>Monday, June 10 2024 | 02:00 PM EST</b></p>
                                     </div>
                                     <h2 class="mb-lg-4 mb-md-3 mb-3 text-white">Essential Strategies for Infection Control in<br className='d-xl-block d-lg-block d-none' /> Nursing Homes and Long - Term Care Facilities.</h2>
                                     <p className='text-white'>Join us for this informative and engaging webinar designed for healthcare professionals, caregivers, and administrators who are dedicated to ensuring the health and safety of residents in nursing homes and long-term care facilities.</p>
-                                    {/* <div className='my-lg-4 my-md-3 my-3'>
-                                        <p className=' text-white'><b>Speakers</b></p>
-                                        <div className='mt-3 d-flex align-items-center justify-content-between gap-xl-5 gap-lg-4 gap-4 flex-xl-nowrap flex-lg-nowrap flex-md-wrap flex-wrap'>
-                                            <div className='d-flex align-items-center gap-3'>
-                                                <div className='speacker_img'>
-                                                    <img src="images/speaker_img.png" />
-                                                </div>
-                                                <div>
-                                                    <p className='mb-1 text-white'><b>Maria Geidt</b></p>
-                                                    <p className='m-0 text-white'>Vorem ipsum dolor sit amet.</p>
-                                                </div>
-                                            </div>
-                                            <div className='d-flex align-items-center gap-3'>
-                                                <div className='speacker_img'>
-                                                    <img src="images/speaker_img2.png" />
-                                                </div>
-                                                <div>
-                                                    <p className='mb-1 text-white'><b>Lindsey Korsgaard</b></p>
-                                                    <p className='m-0 text-white'>Vorem ipsum dolor sit amet.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                
                                     <div>
                                         <button className='btn btn-primary py-3 px-4 bgGreen' onClick={openModal}>Register now</button>
                                     </div>
@@ -96,7 +74,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section > */}
 
             <section class="testing_bg new_testing d-flex align-items-center">
                 <div class="container">
