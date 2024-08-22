@@ -745,6 +745,7 @@ section.product_detail_banner {
 .page_breadcrumb li {
     font-size: 12px;
     font-style: normal;
+    cursor: pointer;
     font-weight: 700;
     line-height: normal;
     color: rgba(0, 0, 0, 0.25);
