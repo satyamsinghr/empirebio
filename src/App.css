@@ -180,7 +180,7 @@ section.new_testing:after {
 
 .btn.btn-outline-primary.border-white:hover,
 .btn.btn-outline-primary.white_button:hover {
-    background: #95E06C;
+    background: #47cbff;
     border-color: #000552 !important;
     color: #000552 !important;
 }
@@ -220,7 +220,7 @@ section.new_testing:after {
 
 
 .btn.btn-outline-primary:hover {
-    background: #62C3CA;
+    background: #47cbff;
     border-color: #000552;
     color: #000552 !important;
 }
@@ -312,7 +312,7 @@ section.testing_bg {
 
 /*=== cleanliness ===*/
 .cleanliness_bg {
-    background-image: url(../public/images/cleanliness-bg.png);
+    background-image: url(../public/images/cleanliness-bg.jpeg);
     min-height: 100vh;
     padding: 64px 0;
     background-size: cover;
@@ -394,7 +394,7 @@ section.feature_products:after {
 }
 
 .products_card img {
-    height: 400px;
+    height: 360px;
     object-fit: cover;
     width: 100%;
 }
@@ -578,7 +578,7 @@ section.siteBanner.inner_banner {
 
 .product_button .btn.btn-outline-primary:hover,
 .btn.btn-primary:hover {
-    background-color: #62C3CA;
+    background-color: #47cbff;
     color: #1E1E1E;
     border: 2px solid #1E1E1E;
 }
@@ -701,9 +701,9 @@ form.form_field button.btn.btn-primary.outline-dark:visited {
 
 button.btn.btn-primary.outline-dark:hover,
 form.form_field button.btn.btn-primary.outline-dark:hover {
-    background: #62C3CA;
+    background: #47cbff;
     color: #000552;
-    border: 2px solid #62C3CA;
+    border: 2px solid #47cbff;
 }
 
 
